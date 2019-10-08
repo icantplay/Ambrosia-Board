@@ -1,54 +1,75 @@
 
     
-*{
-    margin: 0px;
-    padding: 0px;
+#main{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    background-color:#FFe0b3;
+    background-image: url("http://haloespresso.com.au/working/wp-content/uploads/ShortpixelBackups/revslider/slider-home-2/hero_slide_3.jpg");
+    background-size: cover;
 }
 
 nav{
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    min-height: 8vh;
-
-    
-    margin: 0;
-    padding:0;
-}
+    float: right;
+    min-height: 8vh;}
 nav ul{
     color: rgb(224, 132, 11);
-    display: flex;
-    width: 30%;
-    font-size:20px;}
+    float:right;
+    list-style-type: none;
+    margin-top:-150px;
+}
 nav a{
     color: rgb(224, 132, 11);
     text-decoration: none;
     letter-spacing: 3px;
-    font-weight: bold;}
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 50px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+
+}
+nav a:hover{
+    background-color:#fff;
+    color:rgb(224, 132, 11);
+
+}
+nav ul.active a{
+    background-color: #fff;
+    color: rgb(224, 132, 11);
+}
 nav  li{
     list-style: none;
+    display : inline-block;
+    
+   
+}
+header{
+    
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0%;
+    max-width: 1800px;
+    margin:auto;
     
 }
- .img{ 
-    
-    padding:200px 887px;
-    
-    margin: -60px auto 0  -60px;
-    background-image :url("http://haloespresso.com.au/working/wp-content/uploads/ShortpixelBackups/revslider/slider-home-2/hero_slide_3.jpg" );
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-size: cover;
-    
-}
+ 
 
 
 
 .h1{
 text-transform: uppercase;
 color:rgb(224, 132, 11);
-font-size: 22px;
+float: left;
+letter-spacing: 3px;
+height:380px;
+padding-left: 210px;
+font-size:20px;
 }
+
 h2{color: rgb(224, 132, 11);}
 p{color:rgb(224, 132, 11);}
 

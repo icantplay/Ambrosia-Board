@@ -5,10 +5,14 @@
     padding: 0;
     box-sizing: border-box;
     background-color:#FFe0b3;
+    
+    
+}
+.img{
+    
     background-image: url("http://haloespresso.com.au/working/wp-content/uploads/ShortpixelBackups/revslider/slider-home-2/hero_slide_3.jpg");
     background-size: cover;
-}
-
+    background-position: top;}
 nav{
     display: flex;
     justify-content: space-around;

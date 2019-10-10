@@ -75,14 +75,48 @@ SECTION ORGANIZATION
   text-align: center;
   text-transform: uppercase;
   font-size: 40px;
+  color:rgb(224, 132, 11);
+  position: fixed;
+  right: 0px;
+  left:-60px;
 
 }
 
+.img2{
+  background-repeat: no-repeat;
+  display : inline;
+  margin-top: 20px;
+ padding-top: 70px;
+  padding-left: 400px;
+  width: 46%;
+
+
+}
+
+.section2{
+  width: 20%;
+  height: 40%;
+  
+  position: fixed;
+  right: 590px;
+  top:610px;
+  
+  
+ 
+}
+
+.section1{
+  width: 50%;
+  
+}
 /*================
 HEADER SECTION
 =================*/
 header{
   min-height: 50% !important;}
+
+
+
 h2{color: rgb(224, 132, 11);}
-p{color:rgb(224, 132, 11);}
+
 

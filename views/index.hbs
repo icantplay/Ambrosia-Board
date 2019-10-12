@@ -50,51 +50,199 @@
 <section class="dishesNavSection"> <!-- Products Nav Bar-->
     <nav>
         <ul>
-            <li><button onclick="dishesChoice()">Entradas</button> </li>
-            <li><a href="#"> Pratos</a> </li>
-            <li><a href="#"> Sobremesas</a> </li>
-            <li><a href="Login and Register/Pag2.html" > Bebidas</a> </li>
-            <li><a href="Login and Register/Pag3.html" >  Outros</a> </li>
+            <li><button onclick="dishesToggle(this);" id ="entradas">Entradas</button> </li>
+            <li><button onclick="dishesToggle(this);" id="pratos">Pratos</button></li>
+            <li><button onclick="dishesToggle(this);"id="sobremesas">Sobremesas</button></li>
+            <li><button onclick="dishesToggle(this);" id="bebidas">Bebidas</button></li>
+            <li><button onclick="dishesToggle(this);" id="carrinho">Carrinho</button></li>
      
       </ul>
     </nav>
     <script>
-        function dishesChoice() {
-  var x = document.getElementsByClassName("coco");
-  if (x.style.display === "none") {
-    x.style.display = "initial";
-  } else {
-    x.style.display = "none";
-  }
-}
+        function dishesToggle(elem) {
+            var starter = document.getElementById("Starters");
+            var mid = document.getElementById("Mid");
+            var dessert = document.getElementById("Dessert");
+            var drink = document.getElementById("Drinks");
+            var basket = document.getElementById("Basket");
+
+            /*starter.style.display= "block";
+            mid.style.display = "none";
+            dessert.style.display = "none";
+            drink.style.display = "none";
+            basket.style.display = "none";*/
+
+
+            if (elem.id=="entradas"){
+                starter.style.display = "block";
+                mid.style.display="none";
+                dessert.style.display="none";
+                drink.style.display="none";
+                basket.style.display="none";
+
+            }else if(elem.id=="pratos"){
+                starter.style.display = "none";
+                mid.style.display="block";
+                dessert.style.display="none";
+                drink.style.display="none";
+                basket.style.display="none";
+                
+            }else if(elem.id=="sobremesas")
+                start.style.display = "none";
+                mid.style.display="none";
+                dessert.style.display="block";
+                drink.style.display="none";
+                basket.style.display="none"
+
+            }else if(elem.id=="bebidas"){
+                start.style.display = "none";
+                mid.style.display="none";
+                dessert.style.display="none";
+                drink.style.display="block";
+                basket.style.display="none"
+
+            }else if(elem.id=="carrinho"){
+                start.style.display = "none";
+                mid.style.display="none";
+                dessert.style.display="none";
+                drink.style.display="none";
+                basket.style.display="block";
+            } else{
+                starter.style.display = "block";
+                mid.style.display="none";
+                dessert.style.display="none";
+                drink.style.display="none";
+                basket.style.display="none";
+            } /*
+            if (elem.id=="pratos"){
+                mid.style.display = "block";
+            } else{
+                mid.style.display = "none";
+            }}
+            if (elem.id=="sobremesas"){
+                dessert.style.display = "block";
+            } else{
+                dessert.style.display = "none";
+            }}
+            if (elem.id=="bebidas"){
+                drink.style.display = "block";
+            } else{
+                drink.style.display = "none";
+            }}
+            if (elem.id=="carrinho"){
+                basket.style.display = "block";
+            } else{
+                basket.style.display = "none";
+            }}
+            */
 </script>
 </section>
-<section class="dishesSection">      <!-- Produtos-->
-<div class="coco">
+
+
+<section class="dishesSection">   
+       <!-- Produtos-->
+
+<section id="Starters" class="dishesSection">
+<div>
     <h3>IMAGEM1</h3>
-<h4>descricao1</h4>
+<h4>Entrada1</h4>
 <button type="button"> Adicionar </button>
 </div>
 <div>
     <h3>IMAGEM2</h3>
-<h4>descricao2</h4>
+<h4>Entrada2</h4>
 <button type="button"> Adicionar </button>
 </div>
 <div>
     <h3>IMAGEM3</h3>
-<h4>descricao4</h4>
+<h4>Entrada3</h4>
 <button type="button"> Adicionar </button>
 </div>
 <div>
     <h3>IMAGEM4</h3>
-<h4>descricao4</h4>
+<h4>Entrada4</h4>
 <button type="button"> Adicionar </button>
 </div>
 
+</section>
 
+<section id="Mid" class="dishesSection">
+<div>
+    <h3>IMAGEM1</h3>
+<h4>Prato1</h4>
+<button type="button"> Adicionar </button>
+</div>
+<div>
+    <h3>IMAGEM2</h3>
+<h4>Prato2</h4>
+<button type="button"> Adicionar </button>
+</div>
+<div>
+    <h3>IMAGEM3</h3>
+<h4>Prato3</h4>
+<button type="button"> Adicionar </button>
+</div>
+<div>
+    <h3>IMAGEM4</h3>
+<h4>Prato4</h4>
+<button type="button"> Adicionar </button>
+</div>
+
+</section>
+<section id="Dessert" class="dishesSection">
+<div>
+    <h3>IMAGEM1</h3>
+<h4>Sobremesa1</h4>
+<button type="button"> Adicionar </button>
+</div>
+<div>
+    <h3>IMAGEM2</h3>
+<h4>sobremesa2</h4>
+<button type="button"> Adicionar </button>
+</div>
+<div>
+    <h3>IMAGEM3</h3>
+<h4>Sobremesa3</h4>
+<button type="button"> Adicionar </button>
+</div>
+<div>
+    <h3>IMAGEM4</h3>
+<h4>sobremesa4</h4>
+<button type="button"> Adicionar </button>
+</div>
+
+</section>
+<section id="Drinks" class="dishesSection">
+<div>
+    <h3>IMAGEM1</h3>
+<h4>Bebida1</h4>
+<button type="button"> Adicionar </button>
+</div>
+<div>
+    <h3>IMAGEM2</h3>
+<h4>Bebida2</h4>
+<button type="button"> Adicionar </button>
+</div>
+<div>
+    <h3>IMAGEM3</h3>
+<h4>Bebida3</h4>
+<button type="button"> Adicionar </button>
+</div>
+<div>
+    <h3>IMAGEM4</h3>
+<h4>Bebida4</h4>
+<button type="button"> Adicionar </button>
+</div>
+
+</section>
+<section id="Basket" class="dishesSection">
+<div>
+    <h3>FUTURO CARRINHO</h3>
+
+</div>
 
                    
-</section4>
+</section>
 </main>
 </body>
 

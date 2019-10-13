@@ -24,7 +24,7 @@ NAV BAR SECTION
 .nav1{
   width: 100%;
   height: 80px;
-  background-color: #000;
+  background-color: #0009;
   line-height: 80px;
 } 
 .navul{
@@ -36,6 +36,7 @@ NAV BAR SECTION
   display: flex;
   align-items: center;
   float: right;
+  
   
 }
 .nav a{
@@ -210,6 +211,14 @@ HEADER SECTION
 header{
   min-height: 50% !important;}
 
+/*=================
+FOOTER SECTION
+===============*/
+footer{
+  height: 300px;
+  background-color: #0009;
+  margin-top: 185px;
+}
 
 
 

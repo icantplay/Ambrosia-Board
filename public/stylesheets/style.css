@@ -50,12 +50,12 @@ NAV BAR SECTION
   transition: 0.6s ease;
 
 }
-nav a:hover{
+.nav a:hover{
   background-color:#fff;
   color:rgb(224, 132, 11);
 
 }
-nav ul.active a{
+.nav ul.active a{
   background-color: #fff;
   color: rgb(224, 132, 11);
 }
@@ -181,11 +181,57 @@ header{
 FOOTER SECTION
 ===============*/
 footer{
-  height: 300px;
-  background-color: #0009;
+  height: 444px;
+  background-color: #000;
   margin-top: 185px;
 }
+.navfooter{
+  display: flex;
+  flex-direction: column-reverse;
+ 
+}
+.navfooter ul{
 
+  margin:0px;
+  padding: 0px;
+  
+}
+.navfooter li{
+  padding-bottom: 20px;
+}
+
+.navfooter a{
+  color: rgb(224, 132, 11);
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 40px;
+  font-size: 10px;
+
+}
+
+.footer-box{
+  width: 100%;
+  height: auto;
+  margin:auto;
+  margin-bottom: 30px;
+  margin-right: 110px;
+
+}
+.footer-right{
+  width: 285px;
+  height: auto;
+  float: right;
+}
+.h2{
+  color: rgb(224, 132, 11);
+  font-size: 20px;
+  padding-top: 40px;
+  margin:0px;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+}
 
 
 

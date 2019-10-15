@@ -103,37 +103,25 @@ SECTION ORGANIZATION
 /*===========================
 DISHES NAV BAR SECTION
 ============================*/
-  /*.dishesNavSection nav{
-    width: 100%;
-    height: 80px;
-    background-color: rgb(0, 0, 0);
-    line-height: 80px;
-  }*/
+
 .dishesNavSection ul{
   display:flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
 
-  /*
-    float:left;
-    color: rgb(0, 0, 0);
-    
-    list-style-type: none;
-    margin-right:30px;
-  */ }
-/*.dishesNavSection li{
+  .dishesNavSection li{
   flex: auto;
-  
-    /*list-style-type: none;
-    display : inline-block;
-    margin-right: 120px;*/
-
-  
+  flex-wrap:wrap;
+  list-style-type: none;
+  display : inline-block;
+  margin-right: 120px;
+  }
 
   .dishesNavSection button{
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(150, 102, 102);
     border: none;
     color: black;
     padding: 15px 32px;
@@ -141,26 +129,6 @@ DISHES NAV BAR SECTION
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-  }
-
-  
-  /*.dishesNavSection nav ul{
-    float:right;
-    color: rgb(224, 132, 11);
-    
-    list-style-type: none;
-    margin-right:30px;
-  }*/
-  .dishesNavSection nav button{
-    color: rgb(224, 132, 11);
-    text-decoration: none;
-    letter-spacing: 3px;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 30px;
-    border: 1px solid transparent;
-    transition: 0.6s ease;
-  
   }
   .dishesNavSection nav button:hover{
     background-color:#fff;
@@ -176,8 +144,6 @@ DISHES NAV BAR SECTION
     display : inline-block;}
 
 
-
-
   /*===========================
   DISHES LIST SECTION
   ============================*/
@@ -189,7 +155,7 @@ DISHES NAV BAR SECTION
     justify-content:space-between ;
   }
 .dishesSection div{
-    flex: 1 0;
+    flex:0 0  25%;
     
     margin:10;
   }

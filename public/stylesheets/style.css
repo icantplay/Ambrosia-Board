@@ -207,11 +207,11 @@ footer{
 .navfooter a{
   color: rgb(224, 132, 11);
   text-decoration: none;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-weight: bold;
-  text-transform: uppercase;
+ 
   padding: 10px;
-  font-size: 14px;
+  font-size: 15px;
 
 }
 
@@ -219,15 +219,15 @@ footer{
   width: 100%;
   height: auto;
   margin:auto;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   
 
 }
 .footer-right{
   width: 485px;
   height: auto;
-  float: right;
-  border:1px solid #F00;
+  float: left;
+  
 }
 .h2{
   color: rgb(224, 132, 11);

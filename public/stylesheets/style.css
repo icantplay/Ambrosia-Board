@@ -81,6 +81,7 @@ SECTION ORGANIZATION
   margin-top: 70px;
   margin-left:100px;
   margin-right: 100px;
+  margin-bottom: 70px;
 }
 .flex > p{
   text-align: center;

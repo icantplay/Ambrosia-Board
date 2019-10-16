@@ -183,7 +183,7 @@ FOOTER SECTION
 footer{
   height: 444px;
   width: 100%;
-  background-color: black;
+  background-color:#000;
   margin-top: 185px;
 }
 .navfooter{
@@ -218,8 +218,11 @@ footer{
 .footer-box{
   width: 100%;
   height: auto;
-  margin:auto;
-  margin-bottom: 10px;
+  margin:0;
+  margin-bottom: 4px;
+  margin-left: 90px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   
 
 }
@@ -245,7 +248,6 @@ footer{
   float: left;
   border:1px solid #F00;
 }
-
 
 
 

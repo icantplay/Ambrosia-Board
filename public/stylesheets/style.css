@@ -186,6 +186,7 @@ footer{
   width: 100%;
   background-color:#000;
   margin-top: 185px;
+  display:flex;
 }
 .navfooter{
   display: flex;
@@ -218,6 +219,8 @@ footer{
 
 .footer-box{
   width: 100%;
+  display: flex;
+  flex-direction: column;
   height: auto;
   margin:0;
   margin-bottom: 4px;

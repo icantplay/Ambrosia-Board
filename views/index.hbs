@@ -4,6 +4,10 @@
 <head>
     <link rel="stylesheet" href="/style.css">
 </head>
+<<<<<<< HEAD
+=======
+</head>
+>>>>>>> 1a5e7251e878ff5ecb67c32d9dd160bc44c9b427
 
 
 
@@ -21,7 +25,11 @@
                 <li class="nav li"><a class="nav a" href="#"> Sign up</a> </li>
                 <li class="nav li"><a class="nav a" href="#"> Contact</a> </li>
                 <li class="nav li"><a class="nav a" href="Login and Register/Pag2.html"> About us</a> </li>
+<<<<<<< HEAD
                 <li class="nav li"><a class="nav a" href="Login and Register/Pag3.html"> Support</a> </li>
+=======
+                <li class="nav li"><a class="nav a" href="Login and Register/Pag3.html"> Menu</a> </li>
+>>>>>>> 1a5e7251e878ff5ecb67c32d9dd160bc44c9b427
 
             </ul>
         </nav>
@@ -62,13 +70,19 @@
             <!-- Products Nav Bar-->
             <nav>
                 <ul>
+<<<<<<< HEAD
                     <li><button id="entradas" onclick="dishesToggle(this.id)">Entradas</button></li>
                     <li><button id="pratos" onclick="dishesToggle(this.id);">Pratos</button></li>
+=======
+                    <li><button id="entradas" onclick="dishesToggle(this.id);">Entradas</button> </li>
+                    <li><button id="pratos" onclick="dishesToggle(this.id);">Pratos</button> </button></li>
+>>>>>>> 1a5e7251e878ff5ecb67c32d9dd160bc44c9b427
                     <li><button id="sobremesas" onclick="dishesToggle(this.id);">Sobremesas</button></li>
                     <li><button id="bebidas" onclick="dishesToggle(this.id);">Bebidas</button></li>
                     <li><button id="carrinho" onclick="dishesToggle(this.id);">Carrinho</button></li>
 
                     <script type="text/javascript">
+<<<<<<< HEAD
 
                         function dishesToggle(id) {
 
@@ -122,6 +136,66 @@
 
                         }
 
+=======
+                        var x = clicked_id;
+                        function dishesToggle(x) {
+                            /*alert(x);*/
+                            var starter = document.getElementById("Starters");
+                            var mid = document.getElementById("Mid");
+                            var dessert = document.getElementById("Dessert");
+                            var drink = document.getElementById("Drinks");
+                            var basket = document.getElementById("Basket");
+                            if (x == "entradas") {
+                                starter.style.display = "block";
+                                mid.style.display = "none";
+                                dessert.style.display = "none";
+                                drink.style.display = "none";
+                                basket.style.display = "none";
+                            } else if (x == "pratos") {
+                                starter.style.display = "none";
+                                mid.style.display = "block";
+                                dessert.style.display = "none";
+                                drink.style.display = "none";
+                                basket.style.display = "none";/*
+            }else if(x=="sobremesas"){
+                start.style.display = "none";
+                mid.style.display="none";
+                dessert.style.display="block";
+                drink.style.display="none";
+                basket.style.display="none"
+            }else if(x=="bebidas"){
+                start.style.display = "none";
+                mid.style.display="none";
+                dessert.style.display="none";
+                drink.style.display="block";
+                basket.style.display="none"
+            }else if(x=="carrinho"){
+                start.style.display = "none";
+                mid.style.display="none";
+                dessert.style.display="none";
+                drink.style.display="none";
+                basket.style.display="block";*/
+                            } else {
+                                starter.style.display = "block";
+                                mid.style.display = "none";
+                                dessert.style.display = "none";
+                                drink.style.display = "none";
+                                basket.style.display = "none";
+                            }
+                        }
+
+
+
+
+                        /*  switch(clicked_id){
+                              case entradas:
+                              document.getElementById("Starters").style.display="block";
+                              document.getElementById("Mid").style.display="none";
+                              document.getElementById("Drinks").style.display="none";
+                              document.getElementById("Basket").style.display="none";
+                              document.getElementById("Dessert").style.display="none";
+                          }*/
+>>>>>>> 1a5e7251e878ff5ecb67c32d9dd160bc44c9b427
 
                     </script>
                 </ul>
@@ -133,6 +207,7 @@
         <section class="dishesSection">
             <!-- Produtos-->
 
+<<<<<<< HEAD
             <div class="Starters dishesSection">
                 <h3>IMAGEM1</h3>
                 <h4>Entrada1</h4>
@@ -260,6 +335,120 @@
     <footer>
         <section class="footer-right">
             <main class="footer-box">
+=======
+            <section id="Starters" class="dishesSection">
+                <div>
+                    <h3>IMAGEM1</h3>
+                    <h4>Entrada1</h4>
+                    <button type="button"> Adicionar </button>
+                </div>
+                <div>
+                    <h3>IMAGEM2</h3>
+                    <h4>Entrada2</h4>
+                    <button type="button"> Adicionar </button>
+                </div>
+                <div>
+                    <h3>IMAGEM3</h3>
+                    <h4>Entrada3</h4>
+                    <button type="button"> Adicionar </button>
+                </div>
+                <div>
+                    <h3>IMAGEM4</h3>
+                    <h4>Entrada4</h4>
+                    <button type="button"> Adicionar </button>
+                </div>
+
+            </section>
+
+            <section id="Mid" class="dishesSection">
+                <div>
+                    <h3>IMAGEM1</h3>
+                    <h4>Prato1</h4>
+                    <button type="button"> Adicionar </button>
+                </div>
+                <div>
+                    <h3>IMAGEM2</h3>
+                    <h4>Prato2</h4>
+                    <button type="button"> Adicionar </button>
+                </div>
+                <div>
+                    <h3>IMAGEM3</h3>
+                    <h4>Prato3</h4>
+                    <button type="button"> Adicionar </button>
+                </div>
+                <div>
+                    <h3>IMAGEM4</h3>
+                    <h4>Prato4</h4>
+                    <button type="button"> Adicionar </button>
+                </div>
+
+            </section>
+            <section id="Dessert" class="dishesSection">
+                <div>
+                    <h3>IMAGEM1</h3>
+                    <h4>Sobremesa1</h4>
+                    <button type="button"> Adicionar </button>
+                </div>
+                <div>
+                    <h3>IMAGEM2</h3>
+                    <h4>sobremesa2</h4>
+                    <button type="button"> Adicionar </button>
+                </div>
+                <div>
+                    <h3>IMAGEM3</h3>
+                    <h4>Sobremesa3</h4>
+                    <button type="button"> Adicionar </button>
+                </div>
+                <div>
+                    <h3>IMAGEM4</h3>
+                    <h4>sobremesa4</h4>
+                    <button type="button"> Adicionar </button>
+                </div>
+
+            </section>
+            <section id="Drinks" class="dishesSection">
+                <div>
+                    <h3>IMAGEM1</h3>
+                    <h4>Bebida1</h4>
+                    <button type="button"> Adicionar </button>
+                </div>
+                <div>
+                    <h3>IMAGEM2</h3>
+                    <h4>Bebida2</h4>
+                    <button type="button"> Adicionar </button>
+                </div>
+                <div>
+                    <h3>IMAGEM3</h3>
+                    <h4>Bebida3</h4>
+                    <button type="button"> Adicionar </button>
+                </div>
+                <div>
+                    <h3>IMAGEM4</h3>
+                    <h4>Bebida4</h4>
+                    <button type="button"> Adicionar </button>
+                </div>
+
+            </section>
+            <section id="Basket" class="dishesSection">
+                <div>
+                    <h3>FUTURO CARRINHO</h3>
+
+                </div>
+
+
+            </section>
+    </main>
+
+    <section>
+        <h3>Keep the contact</h3>
+
+    </section>
+    <footer>
+        <iframe  class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.459498226337!2d-9.154709684387878!3d38.70725816573395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1934838cfa1033%3A0x36de966c91888246!2sIADE%20-%20Creative%20University!5e0!3m2!1sen!2spt!4v1571239823954!5m2!1sen!2spt"
+                frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          <main class="footer-box">
+>>>>>>> 1a5e7251e878ff5ecb67c32d9dd160bc44c9b427
 
 
                 <h2 class="h2">Contactos</h2>
@@ -271,6 +460,10 @@
 
                     </ul>
                 </nav>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1a5e7251e878ff5ecb67c32d9dd160bc44c9b427
                 <h2 class="h2">Company</h2>
                 <nav class="navfooter">
                     <ul>
@@ -284,11 +477,15 @@
                 </nav>
 
             </main>
+<<<<<<< HEAD
 
         </section>
         <p class="map"><iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.459498226337!2d-9.154709684387878!3d38.70725816573395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1934838cfa1033%3A0x36de966c91888246!2sIADE%20-%20Creative%20University!5e0!3m2!1sen!2spt!4v1571239823954!5m2!1sen!2spt"
                 width="1418" height="443" frameborder="0" style="border:0;" allowfullscreen=""></iframe></p>
+=======
+    </footer>
+>>>>>>> 1a5e7251e878ff5ecb67c32d9dd160bc44c9b427
 
 </body>
 

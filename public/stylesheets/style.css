@@ -26,6 +26,7 @@ NAV BAR SECTION
   height: 80px;
   background-color: #0009;
   line-height: 80px;
+  
 } 
 .navul{
   
@@ -34,8 +35,11 @@ NAV BAR SECTION
   list-style-type: none;
   margin-right:30px;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   float: right;
+  
   
   
 }
@@ -68,10 +72,11 @@ text-transform: uppercase;
 color:rgb(224, 132, 11);
 float: left;
 letter-spacing: 3px;
-height:380px;
+height:30px;
 padding-left: 70px;
 font-size:20px;
 line-height: 80px;
+display: flex;
 }
 /*================
 SECTION ORGANIZATION
@@ -176,17 +181,22 @@ DISHES NAV BAR SECTION
 HEADER SECTION
 =================*/
 header{
-  min-height: 50% !important;}
+  min-height: 50% !important;
+ }
+
 
 /*=================
 FOOTER SECTION
 ===============*/
 footer{
-  height: 444px;
   width: 100%;
+  height: 400px;
   background-color:#000;
   margin-top: 185px;
   display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  
 }
 .navfooter{
   display: flex;
@@ -218,7 +228,9 @@ footer{
 }
 
 .footer-box{
-  width: 100%;
+  width: 485px;
+  min-width: 300px;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   height: auto;
@@ -226,37 +238,28 @@ footer{
   margin-bottom: 4px;
   margin-left: 90px;
   padding-top: 40px;
-  padding-bottom: 40px;
+  
+  order:1;
   
 
 }
-.footer-right{
-  width: 485px;
-  height: auto;
-  float: left;
-  
-}
+
 .h2{
   color: rgb(224, 132, 11);
   font-size: 20px;
-  padding-top: 40px;
+  padding-top: 20px;
   display: flex;
   margin:0px;
   text-transform: uppercase;
   padding-bottom: 15px;
   padding-left: 10px;
 }
-.footer-left{
-  width: 485px;
-  height: auto;
-  float: left;
-  border:1px solid #F00;
-}
-#map{
-  display:flex;
- float: right;
-  
-  
+
+.map{
+  flex-grow: 1fr;
+  min-width: 774px;
+  height: 400px;
+  order:2;
 }
 
 

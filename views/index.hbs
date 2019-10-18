@@ -1,269 +1,295 @@
 <!DOCTYPE html>
 <html>
 
-<head><link rel="stylesheet"  href="/style.css"></head></head>
- 
- 
- 
-
- 
- <body id= "main">
-     
-<header class= "img">
-
-    <title>Ambrosia Board </title>
-    <h1 class="h1"> Ambrosia Board </h1> 
-    <nav class="nav1">
-        <ul class="navul">
-            <li class="nav li"><a class="nav a"href="#"> Login</a> </li>
-            <li class="nav li"><a class="nav a" href="#"> Sign up</a> </li>
-            <li class="nav li"><a class="nav a" href="#"> Contact</a> </li>
-            <li class="nav li"><a class="nav a" href="Login and Register/Pag2.html" > About us</a> </li>
-            <li class="nav li"><a class="nav a" href="Login and Register/Pag3.html" >  Support</a> </li>
-     
-      </ul>
-    </nav>
-</header>
-<br/><br/><br/>
-<main>
-
-<section >
-
-    
-<p class= "sectionp"> Event</p>
-<main class="flex">
- <img class="img2" src="https://res.cloudinary.com/fleetnation/image/private/c_fit,w_1120/g_south,l_text:style_gothic2:%C2%A9%20Rbento,o_20,y_10/g_center,l_watermark4,o_25,y_50/v1430607681/tbdjnles8ytviiewqtcx.jpg" alt="imagem2">
+<head>
+    <link rel="stylesheet" href="/style.css">
+</head>
 
 
 
-    <p>                 Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over the centures.
-                        Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over the centures.
-                        Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over the centures.
-                        Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over the centures.
-                        Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over the centures.
-                        Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over the centures.
-                        Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over the centures.</p>
-</main>
-
-</section>
-
-<section class="dishesNavSection"> <!-- Products Nav Bar-->
-    <nav>
-        <ul>
-            <li><button id ="entradas" onclick="dishesToggle(this.id);" >Entradas</button> </li>
-            <li><button id="pratos" onclick="dishesToggle(this.id);">Pratos</button> </button></li>
-            <li><button id="sobremesas" onclick="dishesToggle(this.id);">Sobremesas</button></li>
-            <li><button id="bebidas" onclick="dishesToggle(this.id);">Bebidas</button></li>
-            <li><button id="carrinho" onclick="dishesToggle(this.id);">Carrinho</button></li>
-
-        <script type="text/javascript">
-        var x = clicked_id;
-        function dishesToggle(x) {    
-            /*alert(x);*/
-            var starter = document.getElementById("Starters");
-            var mid = document.getElementById("Mid");
-            var dessert = document.getElementById("Dessert");
-            var drink = document.getElementById("Drinks");
-            var basket = document.getElementById("Basket");
-            if (x =="entradas"){
-                starter.style.display = "block";
-                mid.style.display="none";
-                dessert.style.display="none";
-                drink.style.display="none";
-                basket.style.display="none";
-            }else if(x=="pratos"){
-                starter.style.display = "none";
-                mid.style.display="block";
-                dessert.style.display="none";
-                drink.style.display="none";
-                basket.style.display="none";/*
-            }else if(x=="sobremesas"){
-                start.style.display = "none";
-                mid.style.display="none";
-                dessert.style.display="block";
-                drink.style.display="none";
-                basket.style.display="none"
-            }else if(x=="bebidas"){
-                start.style.display = "none";
-                mid.style.display="none";
-                dessert.style.display="none";
-                drink.style.display="block";
-                basket.style.display="none"
-            }else if(x=="carrinho"){
-                start.style.display = "none";
-                mid.style.display="none";
-                dessert.style.display="none";
-                drink.style.display="none";
-                basket.style.display="block";*/
-            }else{
-                starter.style.display = "block";
-                mid.style.display="none";
-                dessert.style.display="none";
-                drink.style.display="none";
-                basket.style.display="none";
-                }
-        }
-
-        
-        
-            
-          /*  switch(clicked_id){
-                case entradas:
-                document.getElementById("Starters").style.display="block";
-                document.getElementById("Mid").style.display="none";
-                document.getElementById("Drinks").style.display="none";
-                document.getElementById("Basket").style.display="none";
-                document.getElementById("Dessert").style.display="none";
-            }*/
-
-</script>
-      </ul>
-    </nav>
-    
-</section>
 
 
-<section class="dishesSection">   
-       <!-- Produtos-->
+<body id="main">
 
-<section id="Starters" class="dishesSection">
-<div>
-    <h3>IMAGEM1</h3>
-<h4>Entrada1</h4>
-<button type="button"> Adicionar </button>
-</div>
-<div>
-    <h3>IMAGEM2</h3>
-<h4>Entrada2</h4>
-<button type="button"> Adicionar </button>
-</div>
-<div>
-    <h3>IMAGEM3</h3>
-<h4>Entrada3</h4>
-<button type="button"> Adicionar </button>
-</div>
-<div>
-    <h3>IMAGEM4</h3>
-<h4>Entrada4</h4>
-<button type="button"> Adicionar </button>
-</div>
+    <header class="img">
 
-</section>
+        <title>Ambrosia Board </title>
+        <h1 class="h1"> Ambrosia Board </h1>
+        <nav class="nav1">
+            <ul class="navul">
+                <li class="nav li"><a class="nav a" href="#"> Login</a> </li>
+                <li class="nav li"><a class="nav a" href="#"> Sign up</a> </li>
+                <li class="nav li"><a class="nav a" href="#"> Contact</a> </li>
+                <li class="nav li"><a class="nav a" href="Login and Register/Pag2.html"> About us</a> </li>
+                <li class="nav li"><a class="nav a" href="Login and Register/Pag3.html"> Support</a> </li>
 
-<section id="Mid" class="dishesSection">
-<div>
-    <h3>IMAGEM1</h3>
-<h4>Prato1</h4>
-<button type="button"> Adicionar </button>
-</div>
-<div>
-    <h3>IMAGEM2</h3>
-<h4>Prato2</h4>
-<button type="button"> Adicionar </button>
-</div>
-<div>
-    <h3>IMAGEM3</h3>
-<h4>Prato3</h4>
-<button type="button"> Adicionar </button>
-</div>
-<div>
-    <h3>IMAGEM4</h3>
-<h4>Prato4</h4>
-<button type="button"> Adicionar </button>
-</div>
+            </ul>
+        </nav>
+    </header>
+    <br /><br /><br />
+    <main>
 
-</section>
-<section id="Dessert" class="dishesSection">
-<div>
-    <h3>IMAGEM1</h3>
-<h4>Sobremesa1</h4>
-<button type="button"> Adicionar </button>
-</div>
-<div>
-    <h3>IMAGEM2</h3>
-<h4>sobremesa2</h4>
-<button type="button"> Adicionar </button>
-</div>
-<div>
-    <h3>IMAGEM3</h3>
-<h4>Sobremesa3</h4>
-<button type="button"> Adicionar </button>
-</div>
-<div>
-    <h3>IMAGEM4</h3>
-<h4>sobremesa4</h4>
-<button type="button"> Adicionar </button>
-</div>
+        <section>
 
-</section>
-<section id="Drinks" class="dishesSection">
-<div>
-    <h3>IMAGEM1</h3>
-<h4>Bebida1</h4>
-<button type="button"> Adicionar </button>
-</div>
-<div>
-    <h3>IMAGEM2</h3>
-<h4>Bebida2</h4>
-<button type="button"> Adicionar </button>
-</div>
-<div>
-    <h3>IMAGEM3</h3>
-<h4>Bebida3</h4>
-<button type="button"> Adicionar </button>
-</div>
-<div>
-    <h3>IMAGEM4</h3>
-<h4>Bebida4</h4>
-<button type="button"> Adicionar </button>
-</div>
 
-</section>
-<section id="Basket" class="dishesSection">
-<div>
-    <h3>FUTURO CARRINHO</h3>
+            <p class="sectionp"> Event</p>
+            <main class="flex">
+                <img class="img2"
+                    src="https://res.cloudinary.com/fleetnation/image/private/c_fit,w_1120/g_south,l_text:style_gothic2:%C2%A9%20Rbento,o_20,y_10/g_center,l_watermark4,o_25,y_50/v1430607681/tbdjnles8ytviiewqtcx.jpg"
+                    alt="imagem2">
 
-</div>
 
-                   
-</section>
-</main>
 
-<section>
-    <h3>Keep the contact</h3>
-    
-</section>
-<footer>
-    <section class="footer-right">
-    <main class="footer-box">
-       
-    
-    <h2 class="h2">Contactos</h2>
-    <nav class="navfooter">
-        <ul>
-            <li><a> Email: gongasmarts54@gmail.com</a></li>
-            <li><a> Telephone: +(351)910412042</a></li>
-            
-           
-        </ul>
-    </nav>
-    <h2 class="h2">Company</h2>
-    <nav class="navfooter">
-        <ul>
-            <li><a href="#">Project</a></li>
-            <li><a href="#">Contacts</a></li>
-            <li><a href="#">About us</a></li>
-            
-        </ul>
-                
+                <p> Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over the
+                    centures.
+                    Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over the
+                    centures.
+                    Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over the
+                    centures.
+                    Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over the
+                    centures.
+                    Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over the
+                    centures.
+                    Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over the
+                    centures.
+                    Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over the
+                    centures.</p>
+            </main>
 
-    </nav>
-    
+        </section>
+
+        <section class="dishesNavSection">
+            <!-- Products Nav Bar-->
+            <nav>
+                <ul>
+                    <li><button id="entradas" onclick="dishesToggle(this.id)">Entradas</button></li>
+                    <li><button id="pratos" onclick="dishesToggle(this.id);">Pratos</button></li>
+                    <li><button id="sobremesas" onclick="dishesToggle(this.id);">Sobremesas</button></li>
+                    <li><button id="bebidas" onclick="dishesToggle(this.id);">Bebidas</button></li>
+                    <li><button id="carrinho" onclick="dishesToggle(this.id);">Carrinho</button></li>
+
+                    <script type="text/javascript">
+
+                        function dishesToggle(id) {
+
+                            //alert(id);
+
+                            var starter = document.getElementsByClassName("Starters");
+                            var mid = document.getElementsByClassName("Mid");
+                            var dessert = document.getElementsByClassName("Dessert");
+                            var drink = document.getElementsByClassName("Drinks");
+                            var basket = document.getElementsByClassName("Basket");
+
+
+                            switch (id) {
+                                case "entradas":
+                                    starter.style.display = "block";
+                                    mid.style.display = "none";
+                                    dessert.style.display = "none";
+                                    drink.style.display = "none";
+                                    basket.style.display = "none";
+                                    break;
+                                case "pratos":
+                                    starter.style.display = "none";
+                                    mid.style.display = "block";
+                                    dessert.style.display = "none";
+                                    drink.style.display = "none";
+                                    basket.style.display = "none";
+                                    break;
+                                case "sobremesas":
+                                    starter.style.display = "none";
+                                    mid.style.display = "none";
+                                    dessert.style.display = "block";
+                                    drink.style.display = "none";
+                                    basket.style.display = "none";
+                                    break;
+                                case "bebidas":
+                                    starter.style.display = "none";
+                                    mid.style.display = "none";
+                                    dessert.style.display = "none";
+                                    drink.style.display = "block";
+                                    basket.style.display = "none";
+                                    break;
+                                case "carrinho":
+                                    starter.style.display = "none";
+                                    mid.style.display = "none";
+                                    dessert.style.display = "none";
+                                    drink.style.display = "none";
+                                    basket.style.display = "block";
+                                    break;
+
+                            }
+
+                        }
+
+
+                    </script>
+                </ul>
+            </nav>
+
+        </section>
+
+
+        <section class="dishesSection">
+            <!-- Produtos-->
+
+            <div class="Starters dishesSection">
+                <h3>IMAGEM1</h3>
+                <h4>Entrada1</h4>
+                <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                <button type="button"> Adicionar </button>
+            </div>
+
+            <div class="Starters dishesSection">
+                <h3>IMAGEM2</h3>
+                <h4>Entrada2</h4>
+                <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                <button type="button"> Adicionar </button>
+            </div>
+            <div class="Starters dishesSection">
+                <h3>IMAGEM3</h3>
+                <h4>Entrada3</h4>
+                <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                <button type="button"> Adicionar </button>
+            </div>
+            <div class="Starters dishesSection">
+                <h3>IMAGEM4</h3>
+                <h4>Entrada4</h4>
+                <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                <button type="button"> Adicionar </button>
+            </div>
+
+
+
+
+
+            <div class="dishesSection Mid">
+                <h3>IMAGEM1</h3>
+                <h4>Prato1</h4>
+                <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                <button type="button"> Adicionar </button>
+            </div>
+            <div class="dishesSection Mid">
+                <h3>IMAGEM2</h3>
+                <h4>Prato2</h4>
+                <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                <button type="button"> Adicionar </button>
+            </div>
+            <div class="dishesSection Mid">
+                <h3>IMAGEM3</h3>
+                <h4>Prato3</h4>
+                <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                <button type="button"> Adicionar </button>
+            </div>
+            <div class="dishesSection Mid">
+                <h3>IMAGEM4</h3>
+                <h4>Prato4</h4>
+                <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                <button type="button"> Adicionar </button>
+            </div>
+
+
+
+
+            <div class="dishesSection Dessert">
+                <h3>IMAGEM1</h3>
+                <h4>Sobremesa1</h4>
+                <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                <button type="button"> Adicionar </button>
+            </div>
+            <div class="dishesSection Dessert">
+                <h3>IMAGEM2</h3>
+                <h4>sobremesa2</h4>
+                <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                <button type="button"> Adicionar </button>
+            </div>
+            <div class="dishesSection Dessert">
+                <h3>IMAGEM3</h3>
+                <h4>Sobremesa3</h4>
+                <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                <button type="button"> Adicionar </button>
+            </div>
+            <div class="dishesSection Dessert">
+                <h3>IMAGEM4</h3>
+                <h4>sobremesa4</h4>
+                <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                <button type="button"> Adicionar </button>
+            </div>
+
+
+
+
+            <div class="dishesSection Drinks">
+                <h3>IMAGEM1</h3>
+                <h4>Bebida1</h4>
+                <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                <button type="button"> Adicionar </button>
+            </div>
+            <div class="dishesSection Drinks">
+                <h3>IMAGEM2</h3>
+                <h4>Bebida2</h4>
+                <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                <button type="button"> Adicionar </button>
+            </div>
+            <div class="dishesSection Drinks">
+                <h3>IMAGEM3</h3>
+                <h4>Bebida3</h4>
+                <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                <button type="button"> Adicionar </button>
+            </div>
+            <div class="dishesSection Drinks">
+                <h3>IMAGEM4</h3>
+                <h4>Bebida4</h4>
+                <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                <button type="button"> Adicionar </button>
+            </div>
+
+
+
+
+            <div class="dishesSection Basket">
+                <h3>FUTURO CARRINHO</h3>
+
+            </div>
+
+
+
     </main>
-    
-    </section>
-    <p class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.459498226337!2d-9.154709684387878!3d38.70725816573395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1934838cfa1033%3A0x36de966c91888246!2sIADE%20-%20Creative%20University!5e0!3m2!1sen!2spt!4v1571239823954!5m2!1sen!2spt" width="1418" height="443" frameborder="0" style="border:0;" allowfullscreen=""></iframe></p>
-    
+
+
+    <footer>
+        <section class="footer-right">
+            <main class="footer-box">
+
+
+                <h2 class="h2">Contactos</h2>
+                <nav class="navfooter">
+                    <ul>
+                        <li><a> Email: gongasmarts54@gmail.com</a></li>
+                        <li><a> Telephone: +(351)910412042</a></li>
+
+
+                    </ul>
+                </nav>
+                <h2 class="h2">Company</h2>
+                <nav class="navfooter">
+                    <ul>
+                        <li><a href="#">Project</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">About us</a></li>
+
+                    </ul>
+
+
+                </nav>
+
+            </main>
+
+        </section>
+        <p class="map"><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.459498226337!2d-9.154709684387878!3d38.70725816573395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1934838cfa1033%3A0x36de966c91888246!2sIADE%20-%20Creative%20University!5e0!3m2!1sen!2spt!4v1571239823954!5m2!1sen!2spt"
+                width="1418" height="443" frameborder="0" style="border:0;" allowfullscreen=""></iframe></p>
+
 </body>
 
 </html>

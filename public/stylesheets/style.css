@@ -98,6 +98,33 @@ SECTION ORGANIZATION
     background-repeat: no-repeat;
 }
 
+.menuDiv {
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.897);
+    height: 50px;
+    align-items: center;
+}
+
+.menuDiv h2 {
+    color: rgb(224, 132, 11);
+}
+
+.informationDiv {
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.897);
+    height: 100px;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.informationDiv h2 {
+    color: rgb(224, 132, 11);
+}
+
 
 /*===========================
 DISHES NAV BAR SECTION
@@ -127,12 +154,10 @@ DISHES NAV BAR SECTION
     align-items: center;
     justify-content: space-between;
     transition: 0.6s ease;
-    margin-right: 120px;
-    background-color: rgba(0, 0, 0, 0.895);
 }
 
 .dishesNavSection button {
-    background-color: rgba(0, 0, 0, 0.896);
+    background-color: rgba(0, 0, 0, 0);
     border: none;
     color: rgb(224, 132, 11);
     padding: 15px 32px;
@@ -149,11 +174,6 @@ DISHES NAV BAR SECTION
 .dishesNavSection nav ul.active button {
     background-color: #fff;
     color: rgb(224, 132, 11);
-}
-
-.dishesNavSection nav button {
-    list-style-type: none;
-    display: inline-block;
 }
 
 

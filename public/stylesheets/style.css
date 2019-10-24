@@ -28,6 +28,7 @@ NAV BAR SECTION
     height: 80px;
     background-color: #0009;
     line-height: 80px;
+    
 }
 
 .navul {
@@ -65,16 +66,7 @@ NAV BAR SECTION
     display: inline-block;
 }
 
-.h1 {
-    text-transform: uppercase;
-    color: rgb(224, 132, 11);
-    float: left;
-    letter-spacing: 3px;
-    height: 380px;
-    padding-left: 70px;
-    font-size: 20px;
-    line-height: 80px;
-}
+
 
 
 /*================
@@ -228,6 +220,10 @@ HEADER SECTION
 
 header {
     min-height: 50% !important;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 200px,300px;
+    flex-grow: 1;
 }
 
 
@@ -240,6 +236,10 @@ footer {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.952);
     margin-top: 185px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 200px,300px;
+    flex-grow: 1;
 }
 
 .navfooter {
@@ -295,9 +295,10 @@ footer {
     padding-left: 10px;
 }
 
-.footer-left {
-    width: 485px;
-    height: auto;
-    float: left;
-    border: 1px solid #F00;
+#map{
+    display: inline;
+    float: right;
+    height: 450px;
+    width:74%;
+    
 }

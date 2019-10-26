@@ -10,17 +10,24 @@ https://ambrosia09-m2.herokuapp.com/
 
 
 Requisitos Funcionais:
+=====================
 	Por parte do cliente:
+	=====================
+	
 *	Seleção dos pratos que deseja comprar;
 *	Adicionar estes pratos ao pedido ou retirá-los;
 *	Finalizar o pedido e receber um talão com o ID do pedido;
 *	Receber a informação do caminho até ao evento;
-Por parte da organização:
+	
+	Por parte da organização:
+	=====================
+	
 *	Atribuir ao pedido um estado. Os estados são: o pagamento efectuado, o pedido pronto e o pedido entregue. 
 *	Filtrar os pedidos que se encontram nos diversos estados caso necessário. 
 receber a informação do caminho até ao evento.
 
 Requisitos não Funcionais:
+=====================
 *	Selecionar quantidade de cada prato;
 *	Visualizar a informação geográfica dos participantes através de um gráfico figurativo.
 

@@ -75,10 +75,10 @@ SECTION ORGANIZATION
 
 .flex {
     display: flex;
-    margin-top: 300px;
+    margin-top: 90px;
     margin-left: 100px;
     margin-right: 100px;
-    margin-bottom: 400px;
+    margin-bottom: 250px;
 }
 
 .flex>p {
@@ -314,7 +314,7 @@ footer {
     display: flex;
     /*align-items: center;*/
     justify-content: center;
-    padding-top: 800px;
+   padding-top: 270px;
     height: 100px;
     align-items: center;
     margin-top: 5%;

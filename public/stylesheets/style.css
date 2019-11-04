@@ -292,11 +292,7 @@ footer {
     padding-bottom: 40px;
 }
 
-.footer-right {
-    width: 485px;
-    height: auto;
-    float: left;
-}
+
 
 .h2 {
     color: rgb(224, 132, 11);
@@ -415,3 +411,8 @@ LOGIN PART
     line-height:20px;
     color:darkgray;
 }
+
+/*=================
+Chose Event Page
+=================*/
+

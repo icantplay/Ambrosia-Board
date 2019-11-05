@@ -15,15 +15,15 @@ Requisitos Funcionais:
 Por parte do cliente:
 	
 	
-*	Seleção dos pratos que deseja comprar;
-*	Adicionar estes pratos ao pedido ou retirá-los;
+*	Selecionar o Evento que se pretende;
+*	Adicionar pratos ao pedido ou retirá-los;
 *	Finalizar o pedido e receber um talão com o ID do pedido;
 *	Receber a informação do caminho até ao evento;
 
 Por parte da organização:
 	
 	
-*	Atribuir ao pedido um estado. Os estados são: o pagamento efectuado, o pedido pronto e o pedido entregue. 
+*	Alterar estados de um pedido. Os estados são: o pagamento efectuado, o pedido pronto e o pedido entregue. 
 *	Filtrar os pedidos que se encontram nos diversos estados caso necessário. 
 receber a informação do caminho até ao evento.
 

@@ -2,6 +2,12 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+        crossorigin=""></script>
     <link rel='stylesheet' href="stylesheets/style.css" />
     <title>Ambrosia Board </title>
 </head>
@@ -14,8 +20,8 @@
 
     <header class="img">
 
-        
-      
+
+
         <nav class="nav1">
             <ul class="navul">
                 <li class="nav li"><a class="nav a" href="#section"> Event</a> </li>
@@ -32,30 +38,37 @@
         <section id="section">
 
 
-            
+
             <main>
                 <p class="sectionp"> Event</p>
                 <section class="flex"><img class="img2"
-                    src="https://res.cloudinary.com/fleetnation/image/private/c_fit,w_1120/g_south,l_text:style_gothic2:%C2%A9%20Rbento,o_20,y_10/g_center,l_watermark4,o_25,y_50/v1430607681/tbdjnles8ytviiewqtcx.jpg"
-                    alt="imagem2">
+                        src="https://res.cloudinary.com/fleetnation/image/private/c_fit,w_1120/g_south,l_text:style_gothic2:%C2%A9%20Rbento,o_20,y_10/g_center,l_watermark4,o_25,y_50/v1430607681/tbdjnles8ytviiewqtcx.jpg"
+                        alt="imagem2">
 
 
 
-                <p> Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over the
-                    centures.
-                    Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over the
-                    centures.
-                    Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over the
-                    centures.
-                    Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over the
-                    centures.
-                    Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over the
-                    centures.
-                    Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over the
-                    centures.
-                    Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over the
-                    centures.</p>
-            </section>
+                    <p> Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over
+                        the
+                        centures.
+                        Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over
+                        the
+                        centures.
+                        Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over
+                        the
+                        centures.
+                        Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over
+                        the
+                        centures.
+                        Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over
+                        the
+                        centures.
+                        Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over
+                        the
+                        centures.
+                        Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over
+                        the
+                        centures.</p>
+                </section>
             </main>
 
         </section>
@@ -267,12 +280,12 @@
     </div>
 
     <footer id="footer">
-        
-    </div>
+
+
         <section class="footer-right">
             <main class="footer-box">
 
-
+                    
                 <h2 class="h2">Contactos</h2>
                 <nav class="navfooter">
                     <ul>
@@ -293,15 +306,25 @@
 
 
                 </nav>
-
+                <div id="mapid">
+                        <script>var mymap = L.map('mapid').setView([51.505, -0.09], 13);;
+                            L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+                                attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+                                maxZoom: 18,
+                                id: 'mapbox.streets',
+                                accessToken: 'pk.eyJ1IjoiZHpjcmF6eSIsImEiOiJjazJubjFvZTUwczNmM2N4NXlxejNzdHJvIn0.1VtrI-1G4qZ0SR6BEJOr6g'
+                            }).addTo(mymap);
+                            L.marker([51.5, -0.09]).addTo(mymap)
+                                .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+                                .openPopup();
+                        </script>
+                    </div>
             </main>
 
-
+            
         </section>
-        <div id="mapid">
-            <script>
-         var mymap = L.map('mapid').setView([51.505, -0.09], 13);
-        </script>
+
+
     </footer>
 
 </body>

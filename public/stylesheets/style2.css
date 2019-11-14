@@ -70,3 +70,57 @@ header {
     flex-basis: 200px,300px;
     flex-grow: 1;
 }
+.sectionE{
+    font-size:70px;
+    display: flex;
+    position: absolute;
+    margin-top: -210px;
+    color: white;
+    margin-right: 20%;
+    margin-left: 37%;
+}
+.eventChose{
+    font-size:30px;
+    display: flex;
+    position: absolute;
+    margin-top: -90px;
+    color:white;
+    margin-right: 20%;
+    margin-left: 38%;
+    padding: 20px;
+}
+.marginleft{
+    margin-left: 10px;
+    background: none;
+    color:#7fdbff;
+    
+    width: 250px;
+    height: 35px;
+    border:none;
+    font-size: 30px;
+}
+.buttonGo{
+    border: 1px solid white;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    margin:10px;
+    transition: 0.7s;
+    color: white;
+}
+.container{
+    text-align: center;
+    margin-top: 40px;
+    margin-left:40px;
+}
+
+.buttonGo:hover {
+    background-color: #fff;
+    color:black;
+}
+
+.buttonGo.active a {
+    background-color: #fff;
+    color: black;
+}

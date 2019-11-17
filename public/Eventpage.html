@@ -2,14 +2,10 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
-        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-        crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
-        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
-        crossorigin=""></script>
-    <link rel='stylesheet' href="stylesheets/style.css" />
-    <title>Ambrosia Board </title>
+    <link rel='stylesheet' href="stylesheets/eventStyle.css" />
+    <script src="javascripts/swap.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 </head>
 
 
@@ -20,7 +16,7 @@
 
     <header class="img">
 
-
+        <title>Ambrosia Board </title>
 
         <nav class="nav1">
             <ul class="navul">
@@ -41,33 +37,15 @@
 
             <main>
                 <p class="sectionp"> Event</p>
-                <section class="flex"><img class="img2"
-                        src="https://res.cloudinary.com/fleetnation/image/private/c_fit,w_1120/g_south,l_text:style_gothic2:%C2%A9%20Rbento,o_20,y_10/g_center,l_watermark4,o_25,y_50/v1430607681/tbdjnles8ytviiewqtcx.jpg"
-                        alt="imagem2">
+                <section class="flex"><img class="img2" src="https://res.cloudinary.com/fleetnation/image/private/c_fit,w_1120/g_south,l_text:style_gothic2:%C2%A9%20Rbento,o_20,y_10/g_center,l_watermark4,o_25,y_50/v1430607681/tbdjnles8ytviiewqtcx.jpg" alt="imagem2">
 
 
 
-                    <p> Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over
-                        the
-                        centures.
-                        Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over
-                        the
-                        centures.
-                        Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over
-                        the
-                        centures.
-                        Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over
-                        the
-                        centures.
-                        Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over
-                        the
-                        centures.
-                        Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over
-                        the
-                        centures.
-                        Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over
-                        the
-                        centures.</p>
+                    <p> Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over the centures. Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over the centures. Located in
+                        the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over the centures. Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over the centures. Located in the heart
+                        of the fertile Tras-dos-Montes countryside,and whose field agriculture over the centures. Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over the centures. Located in the heart of the
+                        fertile Tras-dos-Montes countryside,and whose field agriculture over the centures.
+                    </p>
                 </section>
             </main>
 
@@ -81,194 +59,201 @@
             <!-- Products Nav Bar-->
             <nav>
                 <ul>
-                    <li><button id="entradas" onclick="dishesToggle(this.id)">Entradas</button></li>
-                    <li><button id="pratos" onclick="dishesToggle(this.id);">Pratos</button></li>
-                    <li><button id="sobremesas" onclick="dishesToggle(this.id);">Sobremesas</button></li>
+                    <li><button id="entradas">Entradas</button></li>
+                    <li><button id="pratos" onclick="">Pratos</button></li>
+                    <li><button id="sobremesas" onclick="">Sobremesas</button></li>
                     <li><button id="bebidas" onclick="dishesToggle(this.id);">Bebidas</button></li>
                     <li><button id="carrinho" onclick="dishesToggle(this.id);">Carrinho</button></li>
-
-                    <script type="text/javascript">
-
-                        function dishesToggle(id) {
-
-                            //alert(id);
-
-                            var starter = document.getElementsByClassName("Starters");
-                            var mid = document.getElementsByClassName("Mid");
-                            var dessert = document.getElementsByClassName("Dessert");
-                            var drink = document.getElementsByClassName("Drinks");
-                            var basket = document.getElementsByClassName("Basket");
-
-
-                            switch (id) {
-                                case "entradas":
-                                    starter.style.display = "block";
-                                    mid.style.display = "none";
-                                    dessert.style.display = "none";
-                                    drink.style.display = "none";
-                                    basket.style.display = "none";
-                                    break;
-                                case "pratos":
-                                    starter.style.display = "none";
-                                    mid.style.display = "block";
-                                    dessert.style.display = "none";
-                                    drink.style.display = "none";
-                                    basket.style.display = "none";
-                                    break;
-                                case "sobremesas":
-                                    starter.style.display = "none";
-                                    mid.style.display = "none";
-                                    dessert.style.display = "block";
-                                    drink.style.display = "none";
-                                    basket.style.display = "none";
-                                    break;
-                                case "bebidas":
-                                    starter.style.display = "none";
-                                    mid.style.display = "none";
-                                    dessert.style.display = "none";
-                                    drink.style.display = "block";
-                                    basket.style.display = "none";
-                                    break;
-                                case "carrinho":
-                                    starter.style.display = "none";
-                                    mid.style.display = "none";
-                                    dessert.style.display = "none";
-                                    drink.style.display = "none";
-                                    basket.style.display = "block";
-                                    break;
-
-                            }
-
-                        }
-
-
-                    </script>
                 </ul>
             </nav>
 
         </section>
 
+        <script>
+            $(document).ready(function() {
+                $("#mids").hide();
+                $("#starters").show();
+                $("#desserts").hide();
+                $("#drinks").hide();
+                $("#basket").hide();
 
-        <section class="dishesSection">
+                $("#pratos").click(function() {
+
+                    $("#mids").show();
+                    $("#starters").hide();
+                    $("#desserts").hide();
+                    $("#drinks").hide();
+                    $("#basket").hide();
+                });
+                $("#entradas").click(function() {
+                    $("#mids").hide();
+                    $("#starters").show();
+                    $("#desserts").hide();
+                    $("#drinks").hide();
+                    $("#basket").hide();
+                });
+                $("#bebidas").click(function() {
+                    $("#mids").hide();
+                    $("#starters").hide();
+                    $("#desserts").hide();
+                    $("#drinks").show();
+                    $("#basket").hide();
+                });
+                $("#sobremesas").click(function() {
+                    $("#mids").hide();
+                    $("#starters").hide();
+                    $("#desserts").show();
+                    $("#drinks").hide();
+                    $("#basket").hide();
+                });
+                $("#carrinho").click(function() {
+                    $("#mids").hide();
+                    $("#starters").hide();
+                    $("#desserts").hide();
+                    $("#drinks").hide();
+                    $("#basket").show();
+                });
+            });
+        </script>
+        <section>
             <!-- Produtos-->
+            <div class="Starters dishesSection" id="starters">
+                <div class="Starters dishesSection">
 
-            <div class="Starters dishesSection">
-                <h3>IMAGEM1</h3>
-                <h4>Entrada1</h4>
-                <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
-                <button type="button"> Adicionar </button>
-            </div>
+                    <h4>Entrada1</h4>
+                    <h4>Preço</h4>
+                    <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                    <button type="button"> Adicionar </button>
+                </div>
 
-            <div class="Starters dishesSection">
-                <h3>IMAGEM2</h3>
-                <h4>Entrada2</h4>
-                <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
-                <button type="button"> Adicionar </button>
-            </div>
-            <div class="Starters dishesSection">
-                <h3>IMAGEM3</h3>
-                <h4>Entrada3</h4>
-                <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
-                <button type="button"> Adicionar </button>
-            </div>
-            <div class="Starters dishesSection">
-                <h3>IMAGEM4</h3>
-                <h4>Entrada4</h4>
-                <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
-                <button type="button"> Adicionar </button>
-            </div>
+                <div class="Starters dishesSection">
 
+                    <h4>Entrada2</h4>
+                    <h4>Preço</h4>
+                    <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                    <button type="button"> Adicionar </button>
+                </div>
+                <div class="Starters dishesSection">
 
+                    <h4>Entrada3</h4>
+                    <h4>Preço</h4>
+                    <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                    <button type="button"> Adicionar </button>
+                </div>
+                <div class="Starters dishesSection">
 
-
-
-            <div class="dishesSection Mid">
-                <h3>IMAGEM1</h3>
-                <h4>Prato1</h4>
-                <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
-                <button type="button"> Adicionar </button>
-            </div>
-            <div class="dishesSection Mid">
-                <h3>IMAGEM2</h3>
-                <h4>Prato2</h4>
-                <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
-                <button type="button"> Adicionar </button>
-            </div>
-            <div class="dishesSection Mid">
-                <h3>IMAGEM3</h3>
-                <h4>Prato3</h4>
-                <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
-                <button type="button"> Adicionar </button>
-            </div>
-            <div class="dishesSection Mid">
-                <h3>IMAGEM4</h3>
-                <h4>Prato4</h4>
-                <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
-                <button type="button"> Adicionar </button>
+                    <h4>Entrada4</h4>
+                    <h4>Preço</h4>
+                    <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                    <button type="button"> Adicionar </button>
+                </div>
             </div>
 
 
 
+            <div class="Mid dishesSection" id="mids">
+                <div class="Mid dishesSection">
 
-            <div class="dishesSection Dessert">
-                <h3>IMAGEM1</h3>
-                <h4>Sobremesa1</h4>
-                <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
-                <button type="button"> Adicionar </button>
-            </div>
-            <div class="dishesSection Dessert">
-                <h3>IMAGEM2</h3>
-                <h4>sobremesa2</h4>
-                <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
-                <button type="button"> Adicionar </button>
-            </div>
-            <div class="dishesSection Dessert">
-                <h3>IMAGEM3</h3>
-                <h4>Sobremesa3</h4>
-                <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
-                <button type="button"> Adicionar </button>
-            </div>
-            <div class="dishesSection Dessert">
-                <h3>IMAGEM4</h3>
-                <h4>sobremesa4</h4>
-                <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
-                <button type="button"> Adicionar </button>
-            </div>
+                    <h4>Prato1</h4>
+                    <h4>Preço</h4>
+                    <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                    <button type="button"> Adicionar </button>
+                </div>
+                <div class="Mid dishesSection">
 
+                    <h4>Prato2</h4>
+                    <h4>Preço</h4>
+                    <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                    <button type="button"> Adicionar </button>
+                </div>
+                <div class="Mid dishesSection">
 
+                    <h4>Prato3</h4>
+                    <h4>Preço</h4>
+                    <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                    <button type="button"> Adicionar </button>
+                </div>
+                <div class="Mid dishesSection">
 
-
-            <div class="dishesSection Drinks">
-                <h3>IMAGEM1</h3>
-                <h4>Bebida1</h4>
-                <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
-                <button type="button"> Adicionar </button>
-            </div>
-            <div class="dishesSection Drinks">
-                <h3>IMAGEM2</h3>
-                <h4>Bebida2</h4>
-                <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
-                <button type="button"> Adicionar </button>
-            </div>
-            <div class="dishesSection Drinks">
-                <h3>IMAGEM3</h3>
-                <h4>Bebida3</h4>
-                <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
-                <button type="button"> Adicionar </button>
-            </div>
-            <div class="dishesSection Drinks">
-                <h3>IMAGEM4</h3>
-                <h4>Bebida4</h4>
-                <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
-                <button type="button"> Adicionar </button>
+                    <h4>Prato4</h4>
+                    <h4>Preço</h4>
+                    <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                    <button type="button"> Adicionar </button>
+                </div>
             </div>
 
 
+            <div class=" dishesSection Dessert" id="desserts">
+                <div class="dishesSection Dessert">
+
+                    <h4>Sobremesa1</h4>
+                    <h4>Preço</h4>
+                    <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                    <button type="button"> Adicionar </button>
+                </div>
+                <div class="dishesSection Dessert">
+
+                    <h4>sobremesa2</h4>
+                    <h4>Preço</h4>
+                    <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                    <button type="button"> Adicionar </button>
+                </div>
+                <div class="dishesSection Dessert">
+
+                    <h4>Sobremesa3</h4>
+                    <h4>Preço</h4>
+                    <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                    <button type="button"> Adicionar </button>
+                </div>
+                <div class="dishesSection Dessert">
+
+                    <h4>sobremesa4</h4>
+                    <h4>Preço</h4>
+                    <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                    <button type="button"> Adicionar </button>
+                </div>
+            </div>
 
 
-            <div class="dishesSection Basket">
-                <h3>FUTURO CARRINHO</h3>
 
+            <div class="dishesSection Drinks" id="drinks">
+                <div class="dishesSection Drinks">
+
+                    <h4>Bebida1</h4>
+                    <h4>Preço</h4>
+                    <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                    <button type="button"> Adicionar </button>
+                </div>
+                <div class="dishesSection Drinks">
+
+                    <h4>Bebida2</h4>
+                    <h4>Preço</h4>
+                    <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                    <button type="button"> Adicionar </button>
+                </div>
+                <div class="dishesSection Drinks">
+
+                    <h4>Bebida3</h4>
+                    <h4>Preço</h4>
+                    <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                    <button type="button"> Adicionar </button>
+                </div>
+                <div class="dishesSection Drinks">
+
+                    <h4>Bebida4</h4>
+                    <h4>Preço</h4>
+                    <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                    <button type="button"> Adicionar </button>
+                </div>
+            </div>
+
+
+
+            <div id="basket">
+                <div class="dishesSection Basket">
+                    <h3>FUTURO CARRINHO</h3>
+
+                </div>
             </div>
         </section>
 
@@ -281,11 +266,11 @@
 
     <footer id="footer">
 
-
+        </div>
         <section class="footer-right">
             <main class="footer-box">
 
-                    
+
                 <h2 class="h2">Contactos</h2>
                 <nav class="navfooter">
                     <ul>
@@ -306,50 +291,17 @@
 
 
                 </nav>
-                <div id="mapid">
-                        <script>var mymap = L.map('mapid').setView([51.505, -0.09], 13);;
-                            L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-                                attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-                                maxZoom: 18,
-                                id: 'mapbox.streets',
-                                accessToken: 'pk.eyJ1IjoiZHpjcmF6eSIsImEiOiJjazJubjFvZTUwczNmM2N4NXlxejNzdHJvIn0.1VtrI-1G4qZ0SR6BEJOr6g'
-                            }).addTo(mymap);
-                            L.marker([51.5, -0.09]).addTo(mymap)
-                                .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
-                                .openPopup();
-                        </script>
-                    </div>
+
             </main>
 
-            
+
         </section>
-
-
+        <div id="mapid">
+            <script>
+                var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+            </script>
     </footer>
 
 </body>
 
-</html>
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</html>
+</html>x

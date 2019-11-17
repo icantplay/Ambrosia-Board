@@ -9,327 +9,328 @@
     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
 
 
+</head>
 
-    <body id="main">
+<body id="main">
 
-        <header class="img">
+    <header class="img">
 
-            <title>Ambrosia Board </title>
+        <title>Ambrosia Board </title>
 
-            <nav class="nav1">
-                <ul class="navul">
-                    <li class="nav li"><a class="nav a" href="#section"> Event</a> </li>
-                    <li class="nav li"><a class="nav a" href="#menu"> Menu</a> </li>
-                    <li class="nav li"><a class="nav a" href="#footer"> Informations</a> </li>
+        <nav class="nav1">
+            <ul class="navul">
+                <li class="nav li"><a class="nav a" href="#section"> Event</a> </li>
+                <li class="nav li"><a class="nav a" href="#menu"> Menu</a> </li>
+                <li class="nav li"><a class="nav a" href="#footer"> Informations</a> </li>
 
 
+            </ul>
+        </nav>
+    </header>
+    <br /><br /><br />
+    <main>
+
+        <section id="section">
+
+
+
+            <main>
+                <p class="sectionp"> Event</p>
+                <section class="flex"><img class="img2" src="https://res.cloudinary.com/fleetnation/image/private/c_fit,w_1120/g_south,l_text:style_gothic2:%C2%A9%20Rbento,o_20,y_10/g_center,l_watermark4,o_25,y_50/v1430607681/tbdjnles8ytviiewqtcx.jpg" alt="imagem2">
+
+
+
+                    <p> Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over the centures. Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over the centures. Located in
+                        the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over the centures. Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over the centures. Located in the heart
+                        of the fertile Tras-dos-Montes countryside,and whose field agriculture over the centures. Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over the centures. Located in the heart of the
+                        fertile Tras-dos-Montes countryside,and whose field agriculture over the centures.
+                    </p>
+                </section>
+            </main>
+
+        </section>
+
+        <div class="menuDiv">
+            <H2> EMENTA</H2>
+        </div>
+
+        <section id="menu" class="dishesNavSection">
+            <!-- Products Nav Bar-->
+            <nav>
+                <ul>
+                    <li><button id="entradas">Entradas</button></li>
+                    <li><button id="pratos">Pratos</button></li>
+                    <li><button id="sobremesas">Sobremesas</button></li>
+                    <li><button id="bebidas">Bebidas</button></li>
+                    <li><button id="carrinho" type="button">Carrinho (<span class="total-count"></span>)</button></li>
                 </ul>
             </nav>
-        </header>
-        <br /><br /><br />
-        <main>
 
-            <section id="section">
+        </section>
 
+        <script>
+            $(document).ready(function() {
+                $("#mids").hide();
+                $("#starters").show();
+                $("#desserts").hide();
+                $("#drinks").hide();
+                $("#basket").hide();
 
+                $("#pratos").click(function() {
 
-                <main>
-                    <p class="sectionp"> Event</p>
-                    <section class="flex"><img class="img2" src="https://res.cloudinary.com/fleetnation/image/private/c_fit,w_1120/g_south,l_text:style_gothic2:%C2%A9%20Rbento,o_20,y_10/g_center,l_watermark4,o_25,y_50/v1430607681/tbdjnles8ytviiewqtcx.jpg" alt="imagem2">
-
-
-
-                        <p> Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over the centures. Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over the centures. Located
-                            in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over the centures. Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over the centures. Located in
-                            the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over the centures. Located in the heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over the centures. Located in the
-                            heart of the fertile Tras-dos-Montes countryside,and whose field agriculture over the centures.
-                        </p>
-                    </section>
-                </main>
-
-            </section>
-
-            <div class="menuDiv">
-                <H2> EMENTA</H2>
-            </div>
-
-            <section id="menu" class="dishesNavSection">
-                <!-- Products Nav Bar-->
-                <nav>
-                    <ul>
-                        <li><button id="entradas">Entradas</button></li>
-                        <li><button id="pratos">Pratos</button></li>
-                        <li><button id="sobremesas">Sobremesas</button></li>
-                        <li><button id="bebidas">Bebidas</button></li>
-                        <li><button id="carrinho" type="button">Carrinho (<span class="total-count"></span>)</button></li>
-                    </ul>
-                </nav>
-
-            </section>
-
-            <script>
-                $(document).ready(function() {
+                    $("#mids").show();
+                    $("#starters").hide();
+                    $("#desserts").hide();
+                    $("#drinks").hide();
+                    $("#basket").hide();
+                });
+                $("#entradas").click(function() {
                     $("#mids").hide();
                     $("#starters").show();
                     $("#desserts").hide();
                     $("#drinks").hide();
                     $("#basket").hide();
-
-                    $("#pratos").click(function() {
-
-                        $("#mids").show();
-                        $("#starters").hide();
-                        $("#desserts").hide();
-                        $("#drinks").hide();
-                        $("#basket").hide();
-                    });
-                    $("#entradas").click(function() {
-                        $("#mids").hide();
-                        $("#starters").show();
-                        $("#desserts").hide();
-                        $("#drinks").hide();
-                        $("#basket").hide();
-                    });
-                    $("#bebidas").click(function() {
-                        $("#mids").hide();
-                        $("#starters").hide();
-                        $("#desserts").hide();
-                        $("#drinks").show();
-                        $("#basket").hide();
-                    });
-                    $("#sobremesas").click(function() {
-                        $("#mids").hide();
-                        $("#starters").hide();
-                        $("#desserts").show();
-                        $("#drinks").hide();
-                        $("#basket").hide();
-                    });
-                    $("#carrinho").click(function() {
-                        $("#mids").hide();
-                        $("#starters").hide();
-                        $("#desserts").hide();
-                        $("#drinks").hide();
-                        $("#basket").show();
-                    });
                 });
-            </script>
-            <section class="products">
-                <!-- Produtos-->
-                <div class="Starters dishesSection" id="starters">
-                    <div class="Starters dishesSection">
+                $("#bebidas").click(function() {
+                    $("#mids").hide();
+                    $("#starters").hide();
+                    $("#desserts").hide();
+                    $("#drinks").show();
+                    $("#basket").hide();
+                });
+                $("#sobremesas").click(function() {
+                    $("#mids").hide();
+                    $("#starters").hide();
+                    $("#desserts").show();
+                    $("#drinks").hide();
+                    $("#basket").hide();
+                });
+                $("#carrinho").click(function() {
+                    $("#mids").hide();
+                    $("#starters").hide();
+                    $("#desserts").hide();
+                    $("#drinks").hide();
+                    $("#basket").show();
+                });
+            });
+        </script>
+        <section class="products">
+            <!-- Produtos-->
+            <div class="Starters dishesSection" id="starters">
+                <div class="Starters dishesSection">
 
-                        <h4 class="shop-item-title">Azeitonas</h4>
-                        <p class="shop-item-price"> 0.5</p>
-                        <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    <h4 class="shop-item-title">Azeitonas</h4>
+                    <p class="shop-item-price"> 0.5</p>
+                    <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
 
-                    </div>
-
-                    <div class="Starters dishesSection">
-
-                        <h4 class="shop-item-title">Queijo</h4>
-                        <p class="shop-item-price"> 175</p>
-                        <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                    </div>
-                    <div class="Starters dishesSection">
-                        <h4 class="shop-item-title">Presunto</h4>
-                        <p class="shop-item-price"> 7.5</p>
-                        <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                    </div>
-                    <div class="Starters dishesSection">
-
-                        <h4 class="shop-item-title">Pao</h4>
-                        <p class="shop-item-price"> 0.2</p>
-                        <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                    </div>
                 </div>
 
+                <div class="Starters dishesSection">
 
-
-                <div class="Mid dishesSection" id="mids">
-                    <div class="Mid dishesSection">
-
-                        <h4 class="shop-item-title">Pata de Porco</h4>
-                        <p class="shop-item-price"> 43</p>
-                        <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                    </div>
-                    <div class="Mid dishesSection">
-
-                        <h4 class="shop-item-title">Bacalhau</h4>
-                        <p class="shop-item-price"> 23</p>
-                        <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-
-                    </div>
-                    <div class="Mid dishesSection">
-
-                        <h4 class="shop-item-title">Polvo</h4>
-                        <p class="shop-item-price"> 95</p>
-                        <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                    </div>
-                    <div class="Mid dishesSection">
-
-                        <h4 class="shop-item-title">Peixe</h4>
-                        <p class="shop-item-price"> 12</p>
-                        <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                    </div>
+                    <h4 class="shop-item-title">Queijo</h4>
+                    <p class="shop-item-price"> 175</p>
+                    <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                 </div>
-
-
-                <div class=" dishesSection Dessert" id="desserts">
-                    <div class="dishesSection Dessert">
-
-                        <h4 class="shop-item-title">Gelado de queijo</h4>
-                        <p class="shop-item-price"> 7</p>
-                        <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                    </div>
-                    <div class="dishesSection Dessert">
-
-                        <h4 class="shop-item-title">Doce da Casa</h4>
-                        <p class="shop-item-price"> 35</p>
-                        <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                    </div>
-                    <div class="dishesSection Dessert">
-
-                        <h4 class="shop-item-title">Serradura</h4>
-                        <p class="shop-item-price">35</p>
-                        <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                    </div>
-                    <div class="dishesSection Dessert">
-
-                        <h4 class="shop-item-title">Mousse de Chocolate</h4>
-                        <p class="shop-item-price"> 5</p>
-                        <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                    </div>
+                <div class="Starters dishesSection">
+                    <h4 class="shop-item-title">Presunto</h4>
+                    <p class="shop-item-price"> 7.5</p>
+                    <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                 </div>
+                <div class="Starters dishesSection">
 
-
-
-                <div class="dishesSection Drinks" id="drinks">
-                    <div class="dishesSection Drinks">
-
-                        <h4 class="shop-item-title">Coca-Cola</h4>
-                        <p class="shop-item-price"> 2.5</p>
-                        <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                    </div>
-                    <div class="dishesSection Drinks">
-
-                        <h4 class="shop-item-title">Sumo de Laranja</h4>
-                        <p class="shop-item-price"> 2</p>
-                        <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                    </div>
-                    <div class="dishesSection Drinks">
-
-                        <h4 class="shop-item-title">Agua</h4>
-                        <p class="shop-item-price"> 1</p>
-                        <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                    </div>
-                    <div class="dishesSection Drinks">
-
-                        <h4 class="shop-item-title">Orange</h4>
-                        <p class="shop-item-price"> 0.5</p>
-                        <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-
-                    </div>
+                    <h4 class="shop-item-title">Pao</h4>
+                    <p class="shop-item-price"> 0.2</p>
+                    <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                 </div>
-                <!-- CARRINHO----------------->
-                <section class="container content-section" id="basket">
-                    <h2 class="section-header"></h2>
-                    <div class="cart-row">
-                        <span class="cart-item cart-header cart-column">ITEM</span>
-                        <span class="cart-price cart-header cart-column">PRICE</span>
-                        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
-                    </div>
-                    <div class="cart-items">
-                    </div>
-                    <div class="cart-total">
-                        <strong class="cart-total-title">Total</strong>
-                        <span class="cart-total-price">$0</span>
-                    </div>
-                    <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
-                </section>
+            </div>
 
 
 
-                <!--<div id="basket">
+            <div class="Mid dishesSection" id="mids">
+                <div class="Mid dishesSection">
+
+                    <h4 class="shop-item-title">Pata de Porco</h4>
+                    <p class="shop-item-price"> 43</p>
+                    <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+                <div class="Mid dishesSection">
+
+                    <h4 class="shop-item-title">Bacalhau</h4>
+                    <p class="shop-item-price"> 23</p>
+                    <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+
+                </div>
+                <div class="Mid dishesSection">
+
+                    <h4 class="shop-item-title">Polvo</h4>
+                    <p class="shop-item-price"> 95</p>
+                    <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+                <div class="Mid dishesSection">
+
+                    <h4 class="shop-item-title">Peixe</h4>
+                    <p class="shop-item-price"> 12</p>
+                    <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+
+
+            <div class=" dishesSection Dessert" id="desserts">
+                <div class="dishesSection Dessert">
+
+                    <h4 class="shop-item-title">Gelado de queijo</h4>
+                    <p class="shop-item-price"> 7</p>
+                    <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+                <div class="dishesSection Dessert">
+
+                    <h4 class="shop-item-title">Doce da Casa</h4>
+                    <p class="shop-item-price"> 35</p>
+                    <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+                <div class="dishesSection Dessert">
+
+                    <h4 class="shop-item-title">Serradura</h4>
+                    <p class="shop-item-price">35</p>
+                    <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+                <div class="dishesSection Dessert">
+
+                    <h4 class="shop-item-title">Mousse de Chocolate</h4>
+                    <p class="shop-item-price"> 5</p>
+                    <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+
+
+
+            <div class="dishesSection Drinks" id="drinks">
+                <div class="dishesSection Drinks">
+
+                    <h4 class="shop-item-title">Coca-Cola</h4>
+                    <p class="shop-item-price"> 2.5</p>
+                    <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+                <div class="dishesSection Drinks">
+
+                    <h4 class="shop-item-title">Sumo de Laranja</h4>
+                    <p class="shop-item-price"> 2</p>
+                    <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+                <div class="dishesSection Drinks">
+
+                    <h4 class="shop-item-title">Agua</h4>
+                    <p class="shop-item-price"> 1</p>
+                    <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+                <div class="dishesSection Drinks">
+
+                    <h4 class="shop-item-title">Orange</h4>
+                    <p class="shop-item-price"> 0.5</p>
+                    <p>Muito Boa descrição do Produto em Questão,por exemplo carne de cavalo</p>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+
+                </div>
+            </div>
+            <!-- CARRINHO----------------->
+            <section class="container content-section" id="basket">
+                <h2 class="section-header"></h2>
+                <div class="cart-row">
+                    <span class="cart-item cart-header cart-column">ITEM</span>
+                    <span class="cart-price cart-header cart-column">PRICE</span>
+                    <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                </div>
+                <div class="cart-items">
+                </div>
+                <div class="cart-total">
+                    <strong class="cart-total-title">Total</strong>
+                    <span class="cart-total-price">$0</span>
+                </div>
+                <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+            </section>
+
+
+
+            <!--<div id="basket">
                 <div class="dishesSection Basket">
                     <h1>RIP ENTREGA DE DOMINGO RIP FACULDADE RIP</h1>
 
                 </div>
             </div>-->
-            </section>
+        </section>
 
 
 
-        </main>
-        <div class="informationDiv">
-            <h2> INFORMAÇÕES</h2>
+    </main>
+    <div class="informationDiv">
+        <h2> INFORMAÇÕES</h2>
+    </div>
+
+    <footer id="footer">
+
         </div>
-
-        <footer id="footer">
-
-            </div>
-            <section class="footer-right">
-                <main class="footer-box">
+        <section class="footer-right">
+            <main class="footer-box">
 
 
-                    <h2 class="h2">Contactos</h2>
-                    <nav class="navfooter">
-                        <ul>
-                            <li><a> Email: gongasmarts54@gmail.com</a></li>
-                            <li><a> Telephone: +(351)910412042</a></li>
+                <h2 class="h2">Contactos</h2>
+                <nav class="navfooter">
+                    <ul>
+                        <li><a> Email: gongasmarts54@gmail.com</a></li>
+                        <li><a> Telephone: +(351)910412042</a></li>
 
 
-                        </ul>
-                    </nav>
-                    <h2 class="h2">Company</h2>
-                    <nav class="navfooter">
-                        <ul>
-                            <li><a href="#">Project</a></li>
-                            <li><a href="#">Contacts</a></li>
-                            <li><a href="#">About us</a></li>
+                    </ul>
+                </nav>
+                <h2 class="h2">Company</h2>
+                <nav class="navfooter">
+                    <ul>
+                        <li><a href="#">Project</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">About us</a></li>
 
-                        </ul>
-
-
-                    </nav>
-                    <div id="mapid">
-                        <script>
-                            var mymap = L.map('mapid').setView([51.505, -0.09], 13);;
-                            var layer_GoogleMaps_0 = L.tileLayer('https://mt1.google.com/vt/lyrs=r&x=%7Bx%7D&y=%7By%7D&z=%7Bz%7D', {
-                                opacity: 1.0,
-                                attribution: '',
-                            });
-
-                            layer_GoogleMaps_0;
-
-                            mymap.addLayer(layer_GoogleMaps_0);
-                            L.marker([51.5, -0.09]).addTo(mymap)
-                                .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
-                                .openPopup();
-                        </script>
-                    </div>
-                </main>
+                    </ul>
 
 
-            </section>
+                </nav>
+                <div id="mapid">
+                    <script>
+                        var mymap = L.map('mapid').setView([51.505, -0.09], 13);;
+                        var layer_GoogleMaps_0 = L.tileLayer('https://mt1.google.com/vt/lyrs=r&x=%7Bx%7D&y=%7By%7D&z=%7Bz%7D', {
+                            opacity: 1.0,
+                            attribution: '',
+                        });
 
-        </footer>
+                        layer_GoogleMaps_0;
 
-    </body>
+                        mymap.addLayer(layer_GoogleMaps_0);
+                        L.marker([51.5, -0.09]).addTo(mymap)
+                            .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+                            .openPopup();
+                    </script>
+                </div>
+            </main>
+
+
+        </section>
+
+    </footer>
+
+</body>
 
 </html>

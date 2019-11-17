@@ -1,0 +1,647 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Opan Sans", sans-serif;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.img {
+    background-image: url("http://haloespresso.com.au/working/wp-content/uploads/ShortpixelBackups/revslider/slider-home-2/hero_slide_3.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+
+/*===========================
+NAV BAR SECTION
+============================*/
+
+.nav1 {
+    width: 100%;
+    height: 80px;
+    background-color: #0009;
+    line-height: 80px;
+}
+
+.navul {
+    color: rgb(224, 132, 11);
+    list-style-type: none;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    float: right;
+}
+
+.nav a {
+    color: rgb(224, 132, 11);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 30px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+
+.nav a:hover {
+    background-color: #fff;
+    color: rgb(224, 132, 11);
+}
+
+.nav ul.active a {
+    background-color: #fff;
+    color: rgb(224, 132, 11);
+}
+
+.nav li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+
+/*================
+SECTION ORGANIZATION
+=================*/
+
+.flex {
+    display: flex;
+    margin-top: 90px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 250px;
+}
+
+.flex>p {
+    text-align: center;
+    margin: 10px;
+}
+
+.sectionp {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: rgb(224, 132, 11);
+}
+
+.img2 {
+    width: 50%;
+    background-repeat: no-repeat;
+}
+
+.menuDiv {
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.897);
+    height: 50px;
+    align-items: center;
+}
+
+.menuDiv h2 {
+    color: rgb(224, 132, 11);
+}
+
+.informationDiv h2 {
+    color: rgb(224, 132, 11);
+}
+
+
+/*===========================
+DISHES NAV BAR SECTION
+============================*/
+
+
+/*.dishesNavSection nav{
+  display:grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin:0 auto;
+
+}*/
+
+.dishesNavSection ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.897);
+    margin-bottom: 50px;
+}
+
+.dishesNavSection li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.6s ease;
+}
+
+.dishesNavSection button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: rgb(224, 132, 11);
+    padding: 15px 32px;
+    /*text-align: center;*/
+    display: flex;
+    font-size: 16px;
+}
+
+.dishesNavSection nav button:hover {
+    background-color: #fff;
+    color: rgb(224, 132, 11);
+}
+
+.dishesNavSection nav ul.active button {
+    background-color: #fff;
+    color: rgb(224, 132, 11);
+}
+
+
+/*===========================
+  DISHES LIST SECTION
+  ============================*/
+
+.dishesSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-evenly;
+    column-gap: 50px;
+    row-gap: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.dishesSection button {
+    background-color: rgb(227, 233, 178);
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+
+/*===========================
+  Nested Grids-Organização dentro de Cada Tipo de Prato
+  ============================*/
+
+.Starters {
+    display: grid;
+    column-gap: 50px;
+}
+
+.Mid {
+    display: grid;
+    column-gap: 50px;
+}
+
+.Dessert {
+    display: grid;
+    column-gap: 25px;
+}
+
+.Drinks {
+    display: grid;
+    column-gap: 50px;
+}
+
+.Basket {
+    display: grid;
+    column-gap: 50px;
+}
+
+
+/*================
+HEADER SECTION
+=================*/
+
+header {
+    min-height: 50% !important;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 200px, 300px;
+    flex-grow: 1;
+}
+
+
+/*=================
+FOOTER SECTION
+===============*/
+
+footer {
+    height: 444px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.952);
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 200px, 300px;
+    flex-grow: 1;
+}
+
+.navfooter {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.navfooter ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navfooter li {
+    padding-bottom: 20px;
+    list-style-type: none;
+    padding-top: 2px;
+    text-align: left;
+}
+
+.navfooter a {
+    color: rgb(224, 132, 11);
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.footer-box {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 4px;
+    margin-left: 90px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer-right {
+    width: 485px;
+    height: auto;
+    float: left;
+}
+
+.h2 {
+    color: rgb(224, 132, 11);
+    font-size: 20px;
+    padding-top: 40px;
+    display: flex;
+    margin: 0px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+
+.informationDiv {
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+    padding-top: 270px;
+    height: 100px;
+    align-items: center;
+    margin-top: 5%;
+}
+
+
+/* =================
+MAP PART
+==================*/
+
+#mapid {
+    height: 180PX;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Opan Sans", sans-serif;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.img {
+    background-image: url("http://haloespresso.com.au/working/wp-content/uploads/ShortpixelBackups/revslider/slider-home-2/hero_slide_3.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+
+/*===========================
+NAV BAR SECTION
+============================*/
+
+.nav1 {
+    width: 100%;
+    height: 80px;
+    background-color: #0009;
+    line-height: 80px;
+}
+
+.navul {
+    color: rgb(224, 132, 11);
+    list-style-type: none;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    float: right;
+}
+
+.nav a {
+    color: rgb(224, 132, 11);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 30px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+
+.nav a:hover {
+    background-color: #fff;
+    color: rgb(224, 132, 11);
+}
+
+.nav ul.active a {
+    background-color: #fff;
+    color: rgb(224, 132, 11);
+}
+
+.nav li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+
+/*================
+SECTION ORGANIZATION
+=================*/
+
+.flex {
+    display: flex;
+    margin-top: 90px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 250px;
+}
+
+.flex>p {
+    text-align: center;
+    margin: 10px;
+}
+
+.sectionp {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: rgb(224, 132, 11);
+}
+
+.img2 {
+    width: 50%;
+    background-repeat: no-repeat;
+}
+
+.menuDiv {
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.897);
+    height: 50px;
+    align-items: center;
+}
+
+.menuDiv h2 {
+    color: rgb(224, 132, 11);
+}
+
+.informationDiv h2 {
+    color: rgb(224, 132, 11);
+}
+
+
+/*===========================
+DISHES NAV BAR SECTION
+============================*/
+
+
+/*.dishesNavSection nav{
+  display:grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin:0 auto;
+
+}*/
+
+.dishesNavSection ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.897);
+    margin-bottom: 50px;
+}
+
+.dishesNavSection li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.6s ease;
+}
+
+.dishesNavSection button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: rgb(224, 132, 11);
+    padding: 15px 32px;
+    /*text-align: center;*/
+    display: flex;
+    font-size: 16px;
+}
+
+.dishesNavSection nav button:hover {
+    background-color: #fff;
+    color: rgb(224, 132, 11);
+}
+
+.dishesNavSection nav ul.active button {
+    background-color: #fff;
+    color: rgb(224, 132, 11);
+}
+
+
+/*===========================
+  DISHES LIST SECTION
+  ============================*/
+
+.dishesSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-evenly;
+    column-gap: 50px;
+    row-gap: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.dishesSection button {
+    background-color: rgb(227, 233, 178);
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+
+/*===========================
+  Nested Grids-Organização dentro de Cada Tipo de Prato
+  ============================*/
+
+.Starters {
+    display: grid;
+    column-gap: 50px;
+}
+
+.Mid {
+    display: grid;
+    column-gap: 50px;
+}
+
+.Dessert {
+    display: grid;
+    column-gap: 25px;
+}
+
+.Drinks {
+    display: grid;
+    column-gap: 50px;
+}
+
+.Basket {
+    display: grid;
+    column-gap: 50px;
+}
+
+
+/*================
+HEADER SECTION
+=================*/
+
+header {
+    min-height: 50% !important;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 200px, 300px;
+    flex-grow: 1;
+}
+
+
+/*=================
+FOOTER SECTION
+===============*/
+
+footer {
+    height: 444px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.952);
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 200px, 300px;
+    flex-grow: 1;
+}
+
+.navfooter {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.navfooter ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navfooter li {
+    padding-bottom: 20px;
+    list-style-type: none;
+    padding-top: 2px;
+    text-align: left;
+}
+
+.navfooter a {
+    color: rgb(224, 132, 11);
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.footer-box {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 4px;
+    margin-left: 90px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer-right {
+    width: 485px;
+    height: auto;
+    float: left;
+}
+
+.h2 {
+    color: rgb(224, 132, 11);
+    font-size: 20px;
+    padding-top: 40px;
+    display: flex;
+    margin: 0px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+
+.informationDiv {
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+    padding-top: 270px;
+    height: 100px;
+    align-items: center;
+    margin-top: 5%;
+}
+
+
+/* =================
+MAP PART
+==================*/
+
+#mapid {
+    height: 180PX;
+}

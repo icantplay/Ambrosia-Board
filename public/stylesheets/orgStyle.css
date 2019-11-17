@@ -1,0 +1,35 @@
+html {
+    min-height: 100%;
+}
+
+#topNav {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.897);
+    line-height: 80px;
+}
+
+#topNav h1 {
+    color: rgb(224, 132, 11);
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: rgb(227, 233, 178);
+    height: 100vh;
+}
+
+.mainContent {
+    flex: 6;
+    background-color: white;
+    height: 100vh;
+}

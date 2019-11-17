@@ -1,0 +1,105 @@
+.mainlogin {
+    display: flex;
+    margin-top: 500px;
+    padding: 0;
+    background-image: url("https://www.radzen.com/documentation/login-background.png%22");
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    background-repeat: no-repeat;
+}
+
+.loginbox {
+    width: 320px;
+    height: 420px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.Avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+}
+
+.loginh1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.loginboxp {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginbox input[type="text"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    color: white;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+}
+
+.loginboxpass {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    color: white;
+    height: 40px;
+    font-size: 16px;
+}
+
+.loginbox button[type="button"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+    width: 200px;
+}
+
+.loginbox button[type="button"]:hover {
+    cursor: pointer;
+    background: white;
+    color: #000;
+}
+
+.loginbox a {
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 20px;
+    color: darkgray;
+}
+
+
+/*=================
+Chose Event Page
+=================*/
+
+.imagevent {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(4px);
+}

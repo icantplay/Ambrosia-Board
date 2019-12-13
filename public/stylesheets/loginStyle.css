@@ -1,15 +1,15 @@
-.mainlogin {
+body {
     display: flex;
     margin-top: 500px;
-    padding: 0;
-    background-image: url("https://www.radzen.com/documentation/login-background.png%22");
+    padding-top: 850px;
+    background-image: url("https://scontent.flis6-1.fna.fbcdn.net/v/t1.0-9/1975216_524764424300332_360231515_n.jpg?_nc_cat=102&_nc_ohc=OlLrgm5E3ckAQmf3jHvZ7hH8qZoFWq2qsP_-YRRhMN3h5FXjs9NDCUXWQ&_nc_ht=scontent.flis6-1.fna&oh=df8c77e7b95ed1180725e33552faa0ce&oe=5E74FBD7");
     background-size: cover;
     background-position: center;
     font-family: sans-serif;
     background-repeat: no-repeat;
 }
 
-.loginbox {
+.login-box {
     width: 320px;
     height: 420px;
     background: #000;
@@ -22,7 +22,7 @@
     padding: 70px 30px;
 }
 
-.Avatar {
+.avatar {
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -30,7 +30,7 @@
     top: -50px;
 }
 
-.loginh1 {
+.login-title {
     margin: 0;
     padding: 0 0 20px;
     text-align: center;
@@ -43,12 +43,12 @@
     font-weight: bold;
 }
 
-.loginbox input {
+.login-box input {
     width: 100%;
     margin-bottom: 20px;
 }
 
-.loginbox input[type="text"] {
+.login-box input[type="text"] {
     border: none;
     border-bottom: 1px solid #fff;
     background: transparent;
@@ -58,7 +58,7 @@
     font-size: 16px;
 }
 
-.loginboxpass {
+.pw-input {
     border: none;
     border-bottom: 1px solid #fff;
     background: transparent;
@@ -68,7 +68,7 @@
     font-size: 16px;
 }
 
-.loginbox button[type="button"] {
+.login-box button[type="button"] {
     border: none;
     outline: none;
     height: 40px;
@@ -79,13 +79,13 @@
     width: 200px;
 }
 
-.loginbox button[type="button"]:hover {
+.login-box button[type="button"]:hover {
     cursor: pointer;
     background: white;
     color: #000;
 }
 
-.loginbox a {
+.login-box a {
     text-decoration: none;
     font-size: 13px;
     line-height: 20px;

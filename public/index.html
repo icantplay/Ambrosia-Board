@@ -2,9 +2,12 @@
 <html>
 
 <head>
-    <title>Ambrosia Board</title>
-</head>
+<title>Ambrosia Board</title>
 <link rel='stylesheet' href="stylesheets/indexStyle.css" />
+<script src="javascripts/event.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
 
 <body>
 
@@ -22,19 +25,16 @@
 
     </header>
     <h1 class="sectionE">Ambrosia Board</h1>
-    <form class="eventChose">
+    <form class="chosenEvent">
 
         <p>Escolha o evento:</p>
-        <select class="marginleft">
-                <option>Evento Santini</option>
-                <option>Evento Bacalhau</option>
-                <option>Evento Caramelos</option>
-                <option>Evento Cenas</option>
+        <select id="event" class="marginleft" onchange="chosenEvent(this)">
 
-            </select>
+        </select>
     </form>
     <div class="container">
         <button class="buttonGo"><a class="dsg" href="eventpage.html">Go</a></button></div>
 
 
+      
 </body>

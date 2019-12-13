@@ -1,174 +1,212 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: "Opan Sans", sans-serif;
-}
 
-#main {
-    width: 100%;
-    height: 100vh;
-    box-sizing: border-box;
-    background-color: white;
+header{
+    min-height: 50% !important;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 200px, 300px;
+    flex-grow: 1;
 }
-
-.img {
-    background-image: url("http://haloespresso.com.au/working/wp-content/uploads/ShortpixelBackups/revslider/slider-home-2/hero_slide_3.jpg");
-    background-size: cover;
-    background-position: top;
+.header-event{
+    background-image: url("https://images.pexels.com/photos/349609/pexels-photo-349609.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     background-repeat: no-repeat;
+    background-size: cover;
+    opacity:0.9;   
+    
+   
 }
+ body{
+
+    margin:0px;
+ }
 
 
 /*===========================
-NAV BAR SECTION
+TOP NAV BAR 
 ============================*/
 
-.nav1 {
+.top-nav {
+    
     width: 100%;
     height: 80px;
     background-color: #0009;
-    line-height: 80px;
+    line-height: 50px;
 }
 
-.navul {
-    color: rgb(224, 132, 11);
+.top-nav ul {
+    
     list-style-type: none;
     margin-right: 30px;
     display: flex;
     align-items: center;
     float: right;
+    
 }
 
-.nav a {
-    color: rgb(224, 132, 11);
+.top-nav a {
+    color: rgb(207, 81, 7);
+    height: 100px;
     text-decoration: none;
     letter-spacing: 3px;
-    font-weight: bold;
+    font-weight:bold;
     text-transform: uppercase;
     padding: 30px;
     border: 1px solid transparent;
     transition: 0.6s ease;
+    font-family: "Times New Roman, times, serif";
+    
 }
 
-.nav a:hover {
+.top-nav a:hover {
     background-color: #fff;
-    color: rgb(224, 132, 11);
+    color: rgb(207, 81, 7);
 }
 
-.nav ul.active a {
+.top-nav ul.active a {
     background-color: #fff;
-    color: rgb(224, 132, 11);
+    color: rgb(207, 81, 7);
 }
 
-.nav li {
+.top-nav li {
     list-style-type: none;
-    display: inline-block;
+    
+   
 }
 
 
 /*================
-SECTION ORGANIZATION
+Event Part 
 =================*/
-
-.flex {
+main{
+    display:flex;
+    flex-direction: column;
+}
+.btn-ementa{
+    padding-top: 60px;
+    padding-bottom: 380px;
+    text-decoration: none;
+    list-style: none;
+    font-weight: bold;
+    font-size:30px;
+    text-align: center;
+    
+}
+.btn-ementa>a{
+    color:rgb(207, 81, 7);
+    font-family: "Times New Roman", Times, serif;
+    text-decoration: underline
+    
+    
+}
+.event-image-text{
     display: flex;
-    margin-top: 90px;
+    margin-top: 55px;
     margin-left: 100px;
     margin-right: 100px;
-    margin-bottom: 250px;
+    margin-bottom: 0px;
+    align-items: center;
+    font-size:25px;
+    
+    
 }
 
-.flex>p {
+.event-image-text p {
+    
     text-align: center;
+    float: right;
     margin: 10px;
+    color:rgba(0, 0, 0, 0.719);
+    font-weight: bold;
+    max-width: 45%;
+    padding-left: 50px;
+    font-family: "Arial, Helvetica, sans-serif";
+    
+    
 }
 
-.sectionp {
+.eventName   {
+    padding-top: 50px;
     text-align: center;
     text-transform: uppercase;
     font-size: 40px;
-    color: rgb(224, 132, 11);
+    color: rgb(207, 81, 7);
+    font-family: "Arial, Helvetica, sans-serif";
 }
 
-.img2 {
-    width: 50%;
-    background-repeat: no-repeat;
+.eventImage {
+    max-width: 40%;
+    max-height: 40%;
+    margin-left: 60px;
+    border-radius: 18px;
+    opacity:0.9;
 }
 
-.menuDiv {
-    display: flex;
-    /*align-items: center;*/
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.897);
-    height: 50px;
-    align-items: center;
-}
 
-.menuDiv h2 {
-    color: rgb(224, 132, 11);
-}
 
-.informationDiv h2 {
-    color: rgb(224, 132, 11);
-}
+
+
 
 
 /*===========================
-DISHES NAV BAR SECTION
+DISHES NAV BAR
 ============================*/
+.dishes-nav{
+    width: 100%;
+    height: 100px;
+    background-color: #0009;
+    line-height: 80px;
+}
 
-
-/*.dishesNavSection nav{
-  display:grid;
-  grid-template-columns: repeat(5, 1fr);
-  margin:0 auto;
-
-}*/
-
-.dishesNavSection ul {
+.dishes-nav ul {
+    margin-top:0px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.897);
+    align-items: baseline;
+    list-style:none;
     margin-bottom: 50px;
 }
-
-.dishesNavSection li {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    transition: 0.6s ease;
-}
-
-.dishesNavSection button {
+.dishes-nav button {
     background-color: rgba(0, 0, 0, 0);
     border: none;
-    color: rgb(224, 132, 11);
-    padding: 15px 32px;
+    color:rgb(207, 81, 7);
+    text-decoration: none;
+    padding: 30px;
     /*text-align: center;*/
-    display: flex;
-    font-size: 16px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
 }
 
-.dishesNavSection nav button:hover {
+.dishes-nav nav li:hover {
     background-color: #fff;
-    color: rgb(224, 132, 11);
+    color:rgb(207, 81, 7);
 }
 
-.dishesNavSection nav ul.active button {
+.dishes-nav ul.active li {
     background-color: #fff;
-    color: rgb(224, 132, 11);
+    color: rgb(207, 81, 7);
 }
 
 
 /*===========================
   DISHES LIST SECTION
   ============================*/
+.products{
+    background-color:#e7dddbc0;
+    padding-top:150px;
+    padding-bottom:200px;
+    padding-right:100px;
+    padding-left:100px;
+    
+    
+    
+}
+.food-cat-grid {
+    padding:10px;
 
-.dishesSection {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -179,472 +217,47 @@ DISHES NAV BAR SECTION
     margin-right: 25px;
 }
 
-.dishesSection button {
-    background-color: rgb(227, 233, 178);
+.food-cat-grid p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.food-cat-grid button {
+    background-color: rgba(27, 124, 116, 0.267);
     border: none;
     color: black;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
-    margin-top: 20px;
+    font-family: "Times New Roman", Times, serif;
 }
 
-
-/*===========================
-  Nested Grids-Organização dentro de Cada Tipo de Prato
-  ============================*/
-
-.Starters {
-    display: grid;
-    column-gap: 50px;
-}
-
-.Mid {
-    display: grid;
-    column-gap: 50px;
-}
-
-.Dessert {
-    display: grid;
-    column-gap: 25px;
-}
-
-.Drinks {
-    display: grid;
-    column-gap: 50px;
-}
-
-.Basket {
-    display: grid;
-    column-gap: 50px;
-}
-
-
-/*================
-HEADER SECTION
-=================*/
-
-header {
-    min-height: 50% !important;
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: 200px, 300px;
-    flex-grow: 1;
-}
-
-
-/*=================
-FOOTER SECTION
-===============*/
-
-footer {
-    height: 444px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.952);
-    margin-top: 0px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: 200px, 300px;
-    flex-grow: 1;
-}
-
-.navfooter {
-    display: flex;
-    flex-direction: column-reverse;
-}
-
-.navfooter ul {
-    margin: 0px;
-    padding: 0px;
-}
-
-.navfooter li {
-    padding-bottom: 20px;
-    list-style-type: none;
-    padding-top: 2px;
-    text-align: left;
-}
-
-.navfooter a {
-    color: rgb(224, 132, 11);
-    text-decoration: none;
-    letter-spacing: 1px;
-    font-weight: bold;
-    padding: 10px;
-    font-size: 15px;
-}
-
-.footer-box {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    margin-bottom: 4px;
-    margin-left: 90px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-.footer-right {
-    width: 485px;
-    height: auto;
-    float: left;
-}
-
-.h2 {
-    color: rgb(224, 132, 11);
-    font-size: 20px;
-    padding-top: 40px;
-    display: flex;
-    margin: 0px;
-    text-transform: uppercase;
-    padding-bottom: 15px;
-    padding-left: 10px;
-}
-
-.informationDiv {
-    display: flex;
-    /*align-items: center;*/
-    justify-content: center;
-    padding-top: 270px;
-    height: 100px;
-    align-items: center;
-    margin-top: 5%;
-}
-
-
-/* =================
-MAP PART
-==================*/
-
-#mapid {
-    height: 180PX;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: "Opan Sans", sans-serif;
-}
-
-#main {
-    width: 100%;
-    height: 100vh;
-    box-sizing: border-box;
-    background-color: white;
-}
-
-.img {
-    background-image: url("http://haloespresso.com.au/working/wp-content/uploads/ShortpixelBackups/revslider/slider-home-2/hero_slide_3.jpg");
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-}
-
-
-/*===========================
-NAV BAR SECTION
-============================*/
-
-.nav1 {
-    width: 100%;
-    height: 80px;
-    background-color: #0009;
-    line-height: 80px;
-}
-
-.navul {
-    color: rgb(224, 132, 11);
-    list-style-type: none;
-    margin-right: 30px;
-    display: flex;
-    align-items: center;
-    float: right;
-}
-
-.nav a {
-    color: rgb(224, 132, 11);
-    text-decoration: none;
-    letter-spacing: 3px;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 30px;
-    border: 1px solid transparent;
-    transition: 0.6s ease;
-}
-
-.nav a:hover {
-    background-color: #fff;
-    color: rgb(224, 132, 11);
-}
-
-.nav ul.active a {
-    background-color: #fff;
-    color: rgb(224, 132, 11);
-}
-
-.nav li {
-    list-style-type: none;
-    display: inline-block;
-}
-
-
-/*================
-SECTION ORGANIZATION
-=================*/
-
-.flex {
-    display: flex;
-    margin-top: 90px;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 250px;
-}
-
-.flex>p {
+.dish-info-grid{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     text-align: center;
-    margin: 10px;
+    row-gap:100px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f7f3f3c0;
+    
+    
+    
+    
 }
-
-.sectionp {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 40px;
-    color: rgb(224, 132, 11);
-}
-
-.img2 {
-    width: 50%;
-    background-repeat: no-repeat;
-}
-
-.menuDiv {
-    display: flex;
-    /*align-items: center;*/
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.897);
-    height: 50px;
-    align-items: center;
-}
-
-.menuDiv h2 {
-    color: rgb(224, 132, 11);
-}
-
-.informationDiv h2 {
-    color: rgb(224, 132, 11);
-}
-
-
-/*===========================
-DISHES NAV BAR SECTION
-============================*/
-
-
-/*.dishesNavSection nav{
-  display:grid;
-  grid-template-columns: repeat(5, 1fr);
-  margin:0 auto;
-
-}*/
-
-.dishesNavSection ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.897);
-    margin-bottom: 50px;
-}
-
-.dishesNavSection li {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    transition: 0.6s ease;
-}
-
-.dishesNavSection button {
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
-    color: rgb(224, 132, 11);
-    padding: 15px 32px;
-    /*text-align: center;*/
-    display: flex;
-    font-size: 16px;
-}
-
-.dishesNavSection nav button:hover {
-    background-color: #fff;
-    color: rgb(224, 132, 11);
-}
-
-.dishesNavSection nav ul.active button {
-    background-color: #fff;
-    color: rgb(224, 132, 11);
-}
-
-
-/*===========================
-  DISHES LIST SECTION
-  ============================*/
-
-.dishesSection {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-content: space-evenly;
-    column-gap: 50px;
-    row-gap: 50px;
-    margin-left: 25px;
-    margin-right: 25px;
-}
-
-.dishesSection button {
-    background-color: rgb(227, 233, 178);
-    border: none;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin-top: 20px;
-}
-
-
-/*===========================
-  Nested Grids-Organização dentro de Cada Tipo de Prato
-  ============================*/
-
-.Starters {
-    display: grid;
-    column-gap: 50px;
-}
-
-.Mid {
-    display: grid;
-    column-gap: 50px;
-}
-
-.Dessert {
-    display: grid;
-    column-gap: 25px;
-}
-
-.Drinks {
-    display: grid;
-    column-gap: 50px;
-}
-
-.Basket {
-    display: grid;
-    column-gap: 50px;
-}
-
-
-/*================
-HEADER SECTION
-=================*/
-
-header {
-    min-height: 50% !important;
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: 200px, 300px;
-    flex-grow: 1;
-}
-
-
-/*=================
-FOOTER SECTION
-===============*/
-
-footer {
-    height: 444px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.952);
-    margin-top: 0px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: 200px, 300px;
-    flex-grow: 1;
-}
-
-.navfooter {
-    display: flex;
-    flex-direction: column-reverse;
-}
-
-.navfooter ul {
-    margin: 0px;
-    padding: 0px;
-}
-
-.navfooter li {
-    padding-bottom: 20px;
-    list-style-type: none;
-    padding-top: 2px;
-    text-align: left;
-}
-
-.navfooter a {
-    color: rgb(224, 132, 11);
-    text-decoration: none;
-    letter-spacing: 1px;
+.item-name{
+    
     font-weight: bold;
-    padding: 10px;
-    font-size: 15px;
+    font-size: 1.5em;
 }
+.item-price{
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
 
-.footer-box {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    margin-bottom: 4px;
-    margin-left: 90px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
+    
 
-.footer-right {
-    width: 485px;
-    height: auto;
-    float: left;
-}
-
-.h2 {
-    color: rgb(224, 132, 11);
-    font-size: 20px;
-    padding-top: 40px;
-    display: flex;
-    margin: 0px;
-    text-transform: uppercase;
-    padding-bottom: 15px;
-    padding-left: 10px;
-}
-
-.informationDiv {
-    display: flex;
-    /*align-items: center;*/
-    justify-content: center;
-    padding-top: 270px;
-    height: 100px;
-    align-items: center;
-    margin-top: 5%;
 }
 
 
-/* =================
-MAP PART
-==================*/
-
-#mapid {
-    height: 180PX;
-}
 
 .btn {
     text-align: center;
@@ -652,120 +265,27 @@ MAP PART
     padding: .67em .67em;
     cursor: pointer;
 }
-
-.btn-header {
-    margin: .5em 15% 2em 15%;
-    color: white;
-    border: 2px solid #2D9CDB;
-    background-color: rgba(255, 255, 255, .1);
-    border-radius: 0;
-    font-size: 1.5em;
-    font-weight: lighter;
-    padding-left: 2em;
-    padding-right: 2em;
+.buy-btn{
+    border-radius: 12px;
 }
 
-.btn-header:hover {
-    background-color: rgba(255, 255, 255, .3);
-}
-
-.btn-play {
+.btn-purchase {
     display: block;
-    margin: 0 auto;
-    color: #2D9CDB;
-    font-size: 4em;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    padding: 0;
-    text-align: center;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+    background-color: rgba(27, 124, 116, 0.267);
+    border-radius: 12px;
+    color: black;
+    cursor: pointer;
+
 }
 
-.btn-primary {
-    color: white;
-    background-color: #56CCF2;
-    border: none;
-    border-radius: .3em;
-    font-weight: bold;
+.buy-btn:hover {
+    background-color: rgb(170, 197, 212);
 }
 
-.btn-primary:hover {
-    background-color: #2D9CDB;
-}
 
-.tour-row {
-    border-bottom: 1px solid black;
-    padding-bottom: 1em;
-    margin-bottom: 1em;
-}
 
-.tour-row:last-child {
-    border: none;
-}
-
-.tour-item {
-    display: inline-block;
-    padding-right: .5em;
-}
-
-.tour-date {
-    color: #555;
-    width: 11%;
-    font-weight: bold;
-}
-
-.tour-city {
-    width: 24%;
-}
-
-.tour-arena {
-    width: 42%;
-}
-
-.tour-btn {
-    max-width: 19%;
-}
-
-.shop-item {
-    margin: 30px;
-}
-
-.shop-item-title {
-    display: block;
-    width: 100%;
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.5em;
-    color: #333;
-    margin-bottom: 15px;
-}
-
-.shop-item-image {
-    height: 250px;
-}
-
-.shop-item-details {
-    display: flex;
-    align-items: center;
-    padding: 5px;
-}
-
-.shop-item-price {
-    flex-grow: 1;
-    color: #333;
-}
-
-.shop-items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.cart-header {
-    font-weight: bold;
-    font-size: 1.25em;
-    color: #333;
-}
 
 .cart-column {
     display: flex;
@@ -800,29 +320,25 @@ MAP PART
     font-size: 1.2em;
 }
 
-.cart-item-image {
-    width: 75px;
-    height: auto;
-    border-radius: 10px;
-}
 
-.btn-danger {
+
+.remove-btn {
     color: white;
-    background-color: #EB5757;
+    background-color: rgb(223, 132, 132);
     border: none;
     border-radius: .3em;
     font-weight: bold;
 }
 
-.btn-danger:hover {
-    background-color: #CC4C4C;
+.remove-btn:hover {
+    background-color: rgb(231, 128, 128);
 }
 
 .cart-quantity-input {
     height: 34px;
     width: 50px;
     border-radius: 5px;
-    border: 1px solid #56CCF2;
+    border: 1px solid rgb(175, 220, 235);
     background-color: #eee;
     color: #333;
     padding: 0;
@@ -857,8 +373,198 @@ MAP PART
     font-size: 1.1em;
 }
 
-.btn-purchase {
-    display: block;
-    margin: 40px auto 80px auto;
-    font-size: 1.75em;
+
+
+
+/*=================
+FOOTER SECTION
+===============*/
+#footer{
+    text-align: center;
+    font-weight: bold;
+    background-color: #e7dddb8a;
+    
+}
+#footer h1{background-color: #e7dddb8a;
+
+    
+}
+footer {
+    display:flex;
+    flex-wrap:wrap;
+    margin-bottom: 10px;
+    background-color: #e7dddb8a;
+    height:500px ;
+    
+
+    /*height: 444px;
+    width: 100%;
+   
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 200px, 300px;
+    flex-grow: 1;*/
+}
+.footer-info{
+    flex:1;
+    text-align: center;
+    font-size: large;
+}
+#map{
+    flex:5;
+    min-height: 800px;
+    
+    
+}
+
+/*.navfooter {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.navfooter ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navfooter li {
+    padding-bottom: 20px;
+    list-style-type: none;
+    padding-top: 2px;
+    text-align: left;
+}
+
+.navfooter a {
+    color: rgb(207, 81, 7);
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.footer-box {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 4px;
+    margin-left: 90px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer-right {
+    width: 485px;
+    height: auto;
+    float: left;
+}
+
+.h2 {
+    color: rgb(207, 81, 7);
+    font-size: 20px;
+    padding-top: 40px;
+    display: flex;
+    margin: 0px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+
+.informationDiv {
+    display: flex;
+    /*align-items: center;
+    justify-content: center;
+    padding-top: 270px;
+    height: 100px;
+    align-items: center;
+    margin-top: 5%;
+}
+*/
+
+
+
+
+
+
+/*===========================
+NAV BAR SECTION
+============================*/
+
+
+
+
+
+
+/* MODAL*/
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transition: 200ms ease-in-out;
+    transform: translate(-50%, -50%) scale(0);
+    border: 3px solid black;
+    border-radius: 30px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+}
+
+.activeModal {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+    padding: 10px 15px;
+    display: flex;
+    border-bottom: 2px solid black;
+}
+
+.modal-header .title {
+    font-size: 1.25 rem;
+    font-weight: bold;
+}
+
+.modal-body {
+    padding: 10px 15px;
+}
+
+.overlay {
+    position: fixed;
+    transition: 200ms ease-in-out;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+
+.activeOverlay {
+    opacity: 1;
+}
+
+.modal-footer {
+    display: flex;
+    align-items: center;
+    border-top: 2px solid black;
+    justify-content: space-evenly;
+}
+
+.modal-footer .confirm-btn {
+    cursor: pointer;
+    background: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 25px;
+}
+
+.modal-footer .cancel-btn {
+    cursor: pointer;
+    background: none;
+    font-size: 1rem;
+    font-weight: bold;
 }

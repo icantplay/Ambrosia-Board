@@ -40,4 +40,10 @@ router.get('/orders', function (req, res, next) {
   })
 });
 
+router.post('/changeStatus', function (req, res, next) {
+  
+  DAO.postOrder(req.body.orderStatus,req.body.orderId, function (result) {
+          res.send(result);
+      });
+})
 module.exports = router;

@@ -86,3 +86,17 @@ module.exports.getOrders = function (callback, next) {
 
     })
 }
+
+module.exports.changeStatues = function (orderId,orderStatus,callback, next) {
+    db.getConnection(function (err, conn) {
+        if (err) {
+            conn.release();
+            next(err);
+        }
+        else conn.query("update oorder set orderStatus='"+orderStatus+"' where idOrder="+orderId+"", function (err) {
+            conn.release();
+            callback({msg:"ola"});
+            
+        })
+    })
+}

@@ -33,25 +33,32 @@ body {
     background-color: white;
     height: 100vh;
 }
-
+.order-content{
+ 
+  row-gap:100px;
+}
 
 .order{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    flex-direction: column;
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
-    text-align: left;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.315);
     row-gap:100px;
     font-size:20px;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
     background-color: #f7f3f3c0;
     padding-right:50px;
+    margin-bottom:20px;
+    min-width: 400px;
 }
 .checkout-btns{
     display:flex;
+    justify-content: space-between;
 
+}
+#orderStatus{
+  padding-right:50px;
 }
 
 
@@ -59,12 +66,13 @@ body {
 .checkbox-container {
     display: inline-block;
     position: relative;
-    padding-left: 35px;
     margin-bottom: 12px;
     cursor: pointer;
     font-size: 22px;
-    
+    padding-left:25px;
     user-select: none;
+    padding-right:22px;
+
     
   }
   
@@ -84,8 +92,10 @@ body {
     left: 0;
     height: 25px;
     width: 25px;
-    background-color: #eee;
+    background-color: rgba(182, 174, 174, 0.651);
     border-radius: 50%;
+    
+    
   }
   
   /* On mouse-over, add a grey background color */

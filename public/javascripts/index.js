@@ -1,4 +1,5 @@
 window.onload = function()  {
+    this.sessionStorage.setItem("chosenEventId",1);
     var eventOption = document.getElementById("event");
     $.ajax({
         url: "/api/event",
@@ -24,5 +25,5 @@ window.onload = function()  {
 
 
 function chosenEvent(s){
-    localStorage.setItem("chosenEventnId", s[s.selectedIndex].id);
+    sessionStorage.setItem("chosenEventId", s[s.selectedIndex].id);
 }

@@ -6,7 +6,7 @@
         var main = document.getElementById("mids");
         var dessert = document.getElementById("desserts");
         var drink = document.getElementById("drinks");
-        var eventId = localStorage.getItem("chosenEventnId");
+        var eventId = sessionStorage.getItem("chosenEventId");
         var eventDescription = document.getElementById("eventdescription");
         var infoOrganization = document.getElementById("OrgInformation");
 
@@ -140,13 +140,16 @@ function ready() {
 }
 
 function purchaseClicked() {
+    var eventId = sessionStorage.getItem("chosenEventId");
+    var idEvent = eventId;
     orderPrice=total;
+    console.log(idEvent);
     console.log(orderPrice);
         $.ajax({
             url:"/api",
             method: "post",
             data: { 
-              orderPrice
+              orderPrice,idEvent
             },
             success: function (res,status) {
                 console.log('fixe')
@@ -156,7 +159,7 @@ function purchaseClicked() {
             }
         });
     
-
+        location.reload();
 }
 
 function removeCartItem(event) {
@@ -197,8 +200,8 @@ function addItemToCart(title, price, defaultValue) {
         if (cartItemNames[i].innerText == title) {
             
              defaultValue += 1;
-            /*return*/
-            
+            return
+        
         }
     }
     var cartRowContents = `
@@ -215,6 +218,7 @@ function addItemToCart(title, price, defaultValue) {
     cartItems.append(cartRow)
     cartRow.getElementsByClassName('remove-btn')[0].addEventListener('click', removeCartItem)
     cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
+    updateCartTotal();
 }
 
 function updateCartTotal() {

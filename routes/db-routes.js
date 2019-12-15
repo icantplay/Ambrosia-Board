@@ -13,7 +13,7 @@ router.get('/dishes', function(req, res, next) {
 
 router.post('/', function (req, res, next) {
   
-  DAO.postOrder(req.body.orderPrice, function (result) {
+  DAO.postOrder(req.body.orderPrice,req.body.idEvent, function (result) {
           res.send(result);
       });
 })
@@ -24,7 +24,7 @@ router.get('/event', function (req, res, next) {
   })
 });
 router.get('/organization', function (req, res, next) {
-  DAO.getOrgaznizationInfo(function (result) {
+  DAO.getOrgInfo(function (result) {
     res.send(result);
   })
 });
@@ -42,8 +42,13 @@ router.get('/orders', function (req, res, next) {
 
 router.post('/changeStatus', function (req, res, next) {
   
-  DAO.postOrder(req.body.orderStatus,req.body.orderId, function (result) {
+  DAO.changeStatus(req.body.orderStatus,req.body.orderId, function (result) {
           res.send(result);
       });
 })
+router.get('/has', function (req, res, next) {
+  DAO.getHas(function (result) {
+    res.send(result);
+  })
+});
 module.exports = router;

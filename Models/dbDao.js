@@ -14,13 +14,13 @@ module.exports.getDishes = function (callback, next) {
     })
 }
 
-module.exports.postOrder = function (orderPrice,callback, next) {
+module.exports.postOrder = function (orderPrice,idEvent,callback, next) {
     db.getConnection(function (err, conn) {
         if (err) {
             conn.release();
             next(err);
         }
-        else conn.query("insert into oorder (orderDate,orderStatus, orderPrice) values (CURDATE(),'waiting', "+orderPrice+")", function (err) {
+        else conn.query("insert into oorder (orderDate,orderStatus,orderPrice,idEvent) values (CURDATE(),'waiting', "+orderPrice+"," +idEvent+")", function (err) {
             conn.release();
             callback({msg:"ola"});
             
@@ -46,7 +46,7 @@ module.exports.getEvent = function (callback, next) {
 }
 
 
-module.exports.getOrgaznizationInfo = function (callback, next) {
+module.exports.getOrgInfo = function (callback, next) {
     db.getConnection(function (err, conn) {
         if (err) {
             conn.release();
@@ -87,7 +87,7 @@ module.exports.getOrders = function (callback, next) {
     })
 }
 
-module.exports.changeStatues = function (orderId,orderStatus,callback, next) {
+module.exports.changeStatus = function (orderStatus,orderId,callback, next) {
     db.getConnection(function (err, conn) {
         if (err) {
             conn.release();
@@ -98,5 +98,19 @@ module.exports.changeStatues = function (orderId,orderStatus,callback, next) {
             callback({msg:"ola"});
             
         })
+    })
+}
+
+module.exports.getHas = function (callback, next) {
+    db.getConnection(function (err, conn) {
+        if (err) {
+            conn.release();
+            next(err);
+        }
+        else conn.query("select * from event_has_employee", function (err, rows) {
+            conn.release();
+            callback(rows);
+        })
+
     })
 }

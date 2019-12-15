@@ -22,3 +22,28 @@ $.ajax({
 
 })
 }
+
+function storeEmpinfo(){
+    var username = document.getElementById("name").value;
+    $.ajax({
+        url:"/api/empregados",
+    method: "get",
+    success: function(result,status) {
+        for ( i in result){
+            if(username == result[i].empName){
+                localStorage.setItem("orgid",result[i].idOrg);
+                localStorage.setItem("idEmp",result[i].idEmp);
+                localStorage.setItem("empType",result[i].empType);
+                console.log(localStorage.getItem("orgid"));
+                console.log(localStorage.getItem("empType"));
+                console.log(localStorage.getItem("idEmp"));
+            }
+        }
+
+    },
+    error: function() {
+        alert("erro");
+    }
+
+})
+}

@@ -6,4 +6,3 @@ var pool = mysql.createPool({
     database: 'ZFzcwwht6v'
 });
 exports.pool = pool;
-//teste

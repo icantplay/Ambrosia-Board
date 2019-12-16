@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var DAO = require('../models/dbDao')
+var DAO = require('../Models/dbDao')
 
 /* GET users listing. */
 router.get('/dishes', function(req, res, next) {

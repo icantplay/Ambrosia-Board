@@ -27,7 +27,7 @@ Cenário secundário 3
 Num terceiro cenário secundário será possível a organização visualizar a informação geográfica dos participantes e calcular uma estatística relativa aos mesmos.
 
 
-
+Diagrama de Blocos e Modelo Domínio encontram-se no ficheiro 2019-20Projeto_50038209_50037589.pdf
 
 
 

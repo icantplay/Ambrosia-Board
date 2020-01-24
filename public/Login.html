@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<hmtl>
+
+    <head>
+        <title>Ambrosia Board/Login</title>
+        <link rel='stylesheet' href="stylesheets/loginStyle.css" />
+        <script src="javascripts/login.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <section class="login-box">
+            <img src="https://www.intellicom-analytics.com/images/avatar.png" class="avatar">
+            <h1 class="login-title">Login Here</h1>
+            <form>
+                <p class="login-label">Username</p>
+                <input type="text" id="name" onchange="storeEmpinfo()" required placeholder="Coloque o seu nome">
+                <p class="login-label">Password</p>
+                <input class="pw-input" id="pass" type="password" name="" placeholder="Coloque a password">
+                <button type="button" class="" onclick="login()">Login</button>
+                <a href="#"> Esqueceu-se da Password?</a>
+            </form>
+        </section>
+        
+
+    </body>
+
+</hmtl>

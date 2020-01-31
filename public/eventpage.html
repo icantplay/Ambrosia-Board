@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link rel='stylesheet' href="stylesheets/eventStyle.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+    <script src="javascripts/infomenu.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    
+    
+
+    
+  
+
+    
+
+
+
+
+    <title>Ambrosia Board </title>
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+
+
+</head>
+
+<body>
+    <div class="header-event">
+
+        <header>
+            <nav class="top-nav">
+                <a id="logo" href="index.html"><h2 class="logo">Ambrosia Board</h2></a>
+            </nav>
+        </header>
+
+
+
+        <main>
+
+            <section id="event-info">
+                <main>
+                    <h1 class="eventName" id="event-name"></h1>
+                    <div class="event-text">    
+                    <p id="event-description"></p>
+                    </div>
+                    <div class="mid-btns">
+                        <a href="#menu" class="mid-btns-css"> <span>Consulte a nossa ementa!</span></a>
+                        <a href="#footer" class="mid-btns-css"><span>Informações</span> </a>
+                     </div>
+                    
+                </main>
+            
+
+            </section>
+
+            <section id="menu">
+                <nav class="dishes-nav">
+                    
+                        <button class="speak one" id="entradas"><span>Entradas</span></button>
+                        <button class="speak two"id="pratos"><span>Pratos</span></button>
+                        <button class="speak three"id="sobremesas"><span>Sobremesas</span></button>
+                        <button class="speak four"id="bebidas"><span>Bebidas</span></button>
+                        
+                        
+                    
+                </nav>
+
+            </section>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("#mids").hide();
+            $("#starters").show();
+            $("#desserts").hide();
+            $("#drinks").hide();
+            
+
+            $("#pratos").click(function () {
+
+                $("#mids").show();
+                $("#starters").hide();
+                $("#desserts").hide();
+                $("#drinks").hide();
+               
+            });
+            $("#entradas").click(function () {
+                $("#mids").hide();
+                $("#starters").show();
+                $("#desserts").hide();
+                $("#drinks").hide();
+                
+            });
+            $("#bebidas").click(function () {
+                $("#mids").hide();
+                $("#starters").hide();
+                $("#desserts").hide();
+                $("#drinks").show();
+                
+            });
+            $("#sobremesas").click(function () {
+                $("#mids").hide();
+                $("#starters").hide();
+                $("#desserts").show();
+                $("#drinks").hide();
+                
+            });
+           
+        });
+    </script>
+    <section class="products">
+        <div id="menu-part">
+        <!-- db-->
+        <div class="dish-info-grid food-cat-grid" id="starters"></div>
+        <div class="dish-info-grid food-cat-grid" id="mids"></div>
+        <div class=" dish-info-grid food-cat-grid" id="desserts"></div>
+        <div class="dish-info-grid food-cat-grid" id="drinks"></div>
+
+        </div>
+        <!-- CARRINHO----------------->
+        <section id="basket">
+            <h2 class="section-header">Carrinho</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">Item</span>
+                <span class="cart-price cart-header cart-column">Preço</span>
+                <span class="cart-quantity cart-header cart-column">Quantidade</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <a  href="#confirm-purchase" rel="modal:open"> <button class="btn btn-oke" type="button">Comprar</button></a>
+            <div id="confirm-purchase" class="modal">
+                <h2>Tem a certeza que pretende confirmar a sua compra?</h2>
+                <div class="modal-btns">
+                    <button class=" btn btn-purchase" type="button">Confirmar</button>
+              </div></div>
+              
+        </section>
+
+
+        
+        
+          
+
+
+
+    </section>
+
+
+
+    </main>
+    <div id="footer" class="footer-nav">
+    <h1>Informações</h1>
+    </div>
+    <footer>
+        
+        
+        <div class="footer-info">
+            <div id="OrgInformation" class="footer-info"></div>
+        </div>
+
+        <div id="map">
+                <script src="javascripts/map.js"></script>
+
+        </div>
+
+    </footer>
+    
+
+</body>
+
+
+
+</html>
